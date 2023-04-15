@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Modern Website</title>
+	<style>
+		/* Add some style to the website */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: white;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+		}
+
+		header a {
+			color: white;
+			text-decoration: none;
+		}
+
+		header nav {
+			display: flex;
+		}
+
+		header nav a {
+			margin-left: 20px;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		/* Add some responsiveness */
+		@media (max-width: 600px) {
+			header {
+				flex-direction: column;
+			}
+			header nav {
+				margin-top: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="/">My Website</a>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+			<a href="/contact">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<h1>Welcome to My Modern Website</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada ipsum id augue cursus, non fermentum ipsum sagittis. Nam fermentum, nibh non luctus blandit, diam diam congue nulla, nec placerat velit velit vel velit. Nam varius metus metus, nec consequat tellus accumsan et. Maecenas consequat, eros sed bibendum fringilla, quam leo hendrerit dui, quis feugiat purus mauris a felis. Cras pharetra leo neque, at semper nisi faucibus eu. Aliquam efficitur ultricies felis, et faucibus metus consectetur a. Aliquam erat volutpat. Sed ac nibh justo. Sed sed ornare nisl. Donec viverra interdum elit, non vestibulum tortor tincidunt sit amet.</p>
+		</div>
+	</main>
+</body>
+</html>

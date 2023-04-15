@@ -1,0 +1,1 @@
+        printf("%s",randstring(2));
