@@ -62,6 +62,7 @@ for epoch in range(2):
                   (epoch + 1, i + 1, running_loss / 2000))
             running_loss = 0.0
 
+
 # Test the neural network
 correct = 0
 total = 0
