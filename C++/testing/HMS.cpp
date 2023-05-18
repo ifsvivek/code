@@ -21,7 +21,7 @@ void head() {
 void time() {
 	int i=0;
 	long long j;
-	cout<<"	\n\n\n	Connecting to Server\n 	Syncing Data";
+	cout<<"	\n\n\n	Connecting to Server\n 	Syncing data";
 	while(i<10)	{
 		for (j=5;j>4;j++) {
 			if (j==99999) {
