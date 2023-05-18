@@ -102,6 +102,7 @@ void hotel::add() {
 		cout<<"\n Sorry..!!!Room is already booked";
 	else {
 		room_no=r;
+		getline(cin, ran);
 		cout<<" Name: ";
 		getline(cin, name);
 		cout<<" Address: ";
