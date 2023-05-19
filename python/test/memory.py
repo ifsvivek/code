@@ -6,8 +6,8 @@ large_array = np.zeros(array_size, dtype=np.int32)
 
 # Create a list of objects that consume memory
 object_list = []
-for _ in range(10**6):  # Create 1 million objects
-    object_list.append([0] * (10**4))  # Each object has 10,000 elements
+for _ in range(10**10):  # Create 1 million objects
+    object_list.append([0] * (10**8))  # Each object has 10,000 elements
 
 # Keep the program running to maintain memory usage
 while True:
