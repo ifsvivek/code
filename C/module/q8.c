@@ -1,4 +1,4 @@
-// Develop a program to sort the given set of numbers using Bubble sort.
+/* Sort the given set of N numbers using Bubble sort. */
 
 #include <stdio.h>
 int main()
