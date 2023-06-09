@@ -5,13 +5,15 @@ and below the average marks for a class of N students. */
 
 #define MAX_NAME_LENGTH 50
 
-struct Student {
+struct Student
+{
     char name[MAX_NAME_LENGTH];
     int rollNumber;
     float marks;
 };
 
-void readStudentData(struct Student *student) {
+void readStudentData(struct Student *student)
+{
     printf("Enter student name: ");
     scanf("%s", student->name);
 
@@ -22,43 +24,53 @@ void readStudentData(struct Student *student) {
     scanf("%f", &student->marks);
 }
 
-void writeStudentData(const struct Student *student) {
+void writeStudentData(const struct Student *student)
+{
     printf("Name: %s\n", student->name);
     printf("Roll Number: %d\n", student->rollNumber);
     printf("Marks: %.2f\n", student->marks);
 }
 
-float computeAverageMarks(const struct Student *students, int numStudents) {
+float computeAverageMarks(const struct Student *students, int numStudents)
+{
     float totalMarks = 0.0;
 
-    for (int i = 0; i < numStudents; i++) {
+    for (int i = 0; i < numStudents; i++)
+    {
         totalMarks += students[i].marks;
     }
 
     return totalMarks / numStudents;
 }
 
-void listStudentsAboveAverage(const struct Student *students, int numStudents, float averageMarks) {
+void listStudentsAboveAverage(const struct Student *students, int numStudents, float averageMarks)
+{
     printf("\nStudents scoring above average marks:\n");
 
-    for (int i = 0; i < numStudents; i++) {
-        if (students[i].marks > averageMarks) {
+    for (int i = 0; i < numStudents; i++)
+    {
+        if (students[i].marks > averageMarks)
+        {
             writeStudentData(&students[i]);
         }
     }
 }
 
-void listStudentsBelowAverage(const struct Student *students, int numStudents, float averageMarks) {
+void listStudentsBelowAverage(const struct Student *students, int numStudents, float averageMarks)
+{
     printf("\nStudents scoring below average marks:\n");
 
-    for (int i = 0; i < numStudents; i++) {
-        if (students[i].marks < averageMarks) {
+    for (int i = 0; i < numStudents; i++)
+    {
+        if (students[i].marks < averageMarks)
+        {
             writeStudentData(&students[i]);
         }
     }
 }
 
-int main() {
+int main()
+{
     int numStudents;
 
     printf("Enter the number of students: ");
@@ -67,7 +79,8 @@ int main() {
     struct Student students[numStudents];
 
     printf("\nEnter student details:\n");
-    for (int i = 0; i < numStudents; i++) {
+    for (int i = 0; i < numStudents; i++)
+    {
         printf("\nStudent %d:\n", i + 1);
         readStudentData(&students[i]);
     }

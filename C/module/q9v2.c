@@ -41,7 +41,7 @@ int main()
             {
                 printf("strings are not equal \n");
             }
-                break;
+            break;
 
         case 3:
             printf("enter two strings\n");

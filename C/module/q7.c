@@ -4,14 +4,16 @@ Print both the results with appropriate inferences. */
 #include <stdio.h>
 #include <math.h>
 
-double taylorApproximation(double x, int terms) {
+double taylorApproximation(double x, int terms)
+{
     double result = 0.0;
     double numerator = x;
     double denominator = 1.0;
     double term = numerator / denominator;
     int sign = 1;
 
-    for (int i = 1; i <= terms; i++) {
+    for (int i = 1; i <= terms; i++)
+    {
         result += sign * term;
         numerator *= x * x;
         denominator *= (2 * i) * (2 * i + 1);
@@ -22,7 +24,8 @@ double taylorApproximation(double x, int terms) {
     return result;
 }
 
-int main() {
+int main()
+{
     double x;
     int terms;
 
@@ -40,9 +43,12 @@ int main() {
 
     printf("\nComparison:\n");
 
-    if (fabs(taylorResult - libraryResult) < 0.000001) {
+    if (fabs(taylorResult - libraryResult) < 0.000001)
+    {
         printf("The results are approximately equal.\n");
-    } else {
+    }
+    else
+    {
         printf("The results are not equal.\n");
     }
     return 0;

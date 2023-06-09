@@ -5,7 +5,8 @@
 #define MAX_FILENAME_LENGTH 100
 #define BUFFER_SIZE 1024
 
-int main() {
+int main()
+{
     char inputFile[MAX_FILENAME_LENGTH];
     char outputFile[MAX_FILENAME_LENGTH];
     FILE *sourceFile, *targetFile;
@@ -21,12 +22,14 @@ int main() {
     sourceFile = fopen(inputFile, "r");
     targetFile = fopen(outputFile, "w");
 
-    if (sourceFile == NULL || targetFile == NULL) {
+    if (sourceFile == NULL || targetFile == NULL)
+    {
         printf("Failed to open the files.\n");
         return 1;
     }
 
-    while ((bytesRead = fread(buffer, sizeof(char), BUFFER_SIZE, sourceFile)) > 0) {
+    while ((bytesRead = fread(buffer, sizeof(char), BUFFER_SIZE, sourceFile)) > 0)
+    {
         fwrite(buffer, sizeof(char), bytesRead, targetFile);
     }
 

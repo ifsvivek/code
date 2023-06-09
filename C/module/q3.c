@@ -5,7 +5,8 @@ is charged. Write a program to read the name of the user, number of units consum
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
   char name[100];
   int units;
   float charge, surcharge;
@@ -15,16 +16,22 @@ int main() {
   printf("Enter the number of units consumed: ");
   scanf("%d", &units);
 
-  if (units <= 200) {
+  if (units <= 200)
+  {
     charge = units * 0.80;
-  } else if (units <= 300) {
+  }
+  else if (units <= 300)
+  {
     charge = 200 * 0.80 + (units - 200) * 0.90;
-  } else {
+  }
+  else
+  {
     charge = 200 * 0.80 + 100 * 0.90 + (units - 300) * 1.00;
   }
-  
+
   charge += 100;
-  if (charge > 400) {
+  if (charge > 400)
+  {
     surcharge = charge * 0.15;
     charge += surcharge;
   }

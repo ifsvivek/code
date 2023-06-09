@@ -4,16 +4,19 @@ an array of N real numbers.*/
 #include <stdio.h>
 #include <math.h>
 
-void computeStatistics(const float *arr, int size, float *sum, float *mean, float *stdDev) {
+void computeStatistics(const float *arr, int size, float *sum, float *mean, float *stdDev)
+{
     *sum = *mean = *stdDev = 0.0;
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         *sum += arr[i];
     }
 
     *mean = *sum / size;
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         float deviation = arr[i] - *mean;
         *stdDev += deviation * deviation;
     }
@@ -21,7 +24,8 @@ void computeStatistics(const float *arr, int size, float *sum, float *mean, floa
     *stdDev = sqrt(*stdDev / size);
 }
 
-int main() {
+int main()
+{
     int N;
 
     printf("Enter the number of elements: ");
@@ -30,7 +34,8 @@ int main() {
     float arr[N];
 
     printf("Enter the elements:\n");
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++)
+    {
         scanf("%f", &arr[i]);
     }
 

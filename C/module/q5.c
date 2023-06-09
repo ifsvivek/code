@@ -2,11 +2,13 @@
 
 #include <stdio.h>
 
-int binarySearch(int arr[], int size, int target) {
+int binarySearch(int arr[], int size, int target)
+{
     int left = 0;
     int right = size - 1;
 
-    while (left <= right) {
+    while (left <= right)
+    {
         int mid = left + (right - left) / 2;
 
         if (arr[mid] == target)
@@ -20,14 +22,16 @@ int binarySearch(int arr[], int size, int target) {
     return -1;
 }
 
-int main() {
+int main()
+{
     int size;
     printf("Enter the size of the array: ");
     scanf("%d", &size);
 
     int arr[size];
     printf("Enter the elements of the array in sorted order:\n");
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         scanf("%d", &arr[i]);
     }
 
