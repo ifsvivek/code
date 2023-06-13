@@ -3,3 +3,5 @@ HTML/*
 **/*.class
 data/
 ardrino/libraries/*
+.vscode
+txt/
