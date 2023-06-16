@@ -6,6 +6,6 @@ int main() {
     printf("Enter L and B: ");
     scanf("%f %f", &l, &b);
     printf("Area: %0.2f\n", l*b );
-    printf("Perimter: %0.2f", 2*(l*b) );
+    printf("Perimter: %0.2f", 2*(l+b) );
     return 0;
 }
