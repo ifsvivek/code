@@ -2,14 +2,9 @@
 #include <stdio.h>
 
 int main() {
-    int a,b;
-    printf("Enter Two Number: ");
-    scanf("%d%d",&a,&b);
-    if(a>b){
-        printf("%d is Greater",a);
-    }
-    else{
-        printf("%d is Greater",b);
-    }
+    int a, b;
+    printf("Enter Two Numbers: ");
+    scanf("%d%d", &a, &b);
+    printf("%d is Greater", (a > b) ? a : b);
     return 0;
 }
