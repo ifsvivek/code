@@ -4,8 +4,8 @@
 
 int main()
 {
-  double a, b, c, d, root1, root2;
-  printf("Input the value of a, b & c: : ");
+  double a, b, c, d, root1, root2,real,img;
+  printf("Input the value of a, b & c: ");
   scanf("%lf %lf %lf", &a, &b, &c);
   d = b * b - 4 * a * c;
 
@@ -23,6 +23,10 @@ int main()
   else
   {
     printf("The roots of the equation are complex.\n");
+    real=-b/(2*a);
+    img=sqrt(fabs(d))/(2*a);
+    printf("Root 1 : %lf+%lfi\nRoot 2 : %lf-%lfi",real,img,real,img);
+
   }
   return 0;
 }

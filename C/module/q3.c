@@ -9,10 +9,11 @@ int main()
 {
   char name[100];
   int units;
-  float charge, surcharge;
+  float charge;
 
   printf("Enter the name of the user: ");
-  scanf("%s", name);
+  gets(name);
+  //scanf("%s", name);
   printf("Enter the number of units consumed: ");
   scanf("%d", &units);
 
@@ -32,8 +33,7 @@ int main()
   charge += 100;
   if (charge > 400)
   {
-    surcharge = charge * 0.15;
-    charge += surcharge;
+    charge = charge + (charge * 0.15);
   }
   printf("The charges for %s are Rs %.2f\n", name, charge);
   return 0;
