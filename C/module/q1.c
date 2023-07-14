@@ -5,21 +5,15 @@ int main() {
     double num1, num2;
     char operator;
     
-    printf("Enter the first number: ");
-    scanf("%lf", &num1);
-    
-    printf("Enter an operator (+, -, *, /): ");
-    scanf(" %c", &operator);
-    
-    printf("Enter the second number: ");
-    scanf("%lf", &num2);
+    printf("Enter the Equation: ");
+    scanf("%lf%c%lf",&num1,&operator,&num2);
     
     double result = (operator == '+') ? num1 + num2 : 
                     (operator == '-') ? num1 - num2 : 
                     (operator == '*') ? num1 * num2 : 
                     (operator == '/') ? num1 / num2 : 0.0;
     
-    printf("Result: %lf\n", result);
+    printf("Result: %.2f\n", result);
     
     return 0;
 }

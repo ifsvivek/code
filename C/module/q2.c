@@ -18,14 +18,14 @@ int main()
   else if (d == 0)
   {
     root1 = root2 = -b / (2 * a);
-    printf("The roots of the equation are both equal to %.2f.\n", root1);
+    printf("The roots of the equation are equal to %.2f.\n", root1);
   }
   else
   {
-    printf("The roots of the equation are complex.\n");
     real=-b/(2*a);
     img=sqrt(fabs(d))/(2*a);
-    printf("Root 1 : %lf+%lfi\nRoot 2 : %lf-%lfi",real,img,real,img);
+    printf("The roots of the equation are complex.\n");
+    printf("Root 1: %.2f+%.2fi\nRoot 2: %.2f-%.2fi",real,img,real,img);
 
   }
   return 0;
