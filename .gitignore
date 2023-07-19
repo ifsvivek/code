@@ -5,3 +5,5 @@ data/
 ardrino/libraries/*
 .vscode
 txt/
+**/*.mp3
+**/*.mp4
