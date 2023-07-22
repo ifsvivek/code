@@ -1,45 +1,37 @@
 #include <stdio.h>
-#include <time.h>
-#include <string.h>
 
 int main() {
-    int day, month, year;
+  int day, month, year;
+  printf("Enter the date in DD/MM/YYYY format: ");
+  scanf("%d/%d/%d", &day, &month, &year);
 
-    printf("Enter date (dd mm yyyy): ");
-    scanf("%d %d %d", &day, &month, &year);
+  // Calculate the day of the week
+  int dayOfWeek = (year + (year / 4) - (year / 100) + (year / 400) + month * 2 + day) % 7;
 
-    // Validate the input
-    if (day <= 0 || month <= 0 || month > 12 || year < 1583) {
-        printf("Invalid date input.\n");
-        return 1;
-    }
+  // Print the day of the week
+  switch (dayOfWeek) {
+    case 0:
+      printf("Sunday\n");
+      break;
+    case 1:
+      printf("Monday\n");
+      break;
+    case 2:
+      printf("Tuesday\n");
+      break;
+    case 3:
+      printf("Wednesday\n");
+      break;
+    case 4:
+      printf("Thursday\n");
+      break;
+    case 5:
+      printf("Friday\n");
+      break;
+    case 6:
+      printf("Saturday\n");
+      break;
+  }
 
-    // Clear the input buffer to avoid any remaining characters
-    while (getchar() != '\n');
-
-    // Create a struct tm with the entered date
-    struct tm date;
-    memset(&date, 0, sizeof(struct tm));
-    date.tm_mday = day;
-    date.tm_mon = month - 1;
-    date.tm_year = year - 1900;
-
-    // Use mktime to convert the struct tm to a time_t value
-    time_t t = mktime(&date);
-
-    if (t == -1) {
-        printf("Invalid date.\n");
-        return 1;
-    }
-
-    // Use localtime to get the day of the week
-    struct tm *lt = localtime(&t);
-
-    // Define an array to hold the day names
-    char* dayNames[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-
-    // Print the result
-    printf("The day on %02d-%02d-%04d is: %s\n", day, month, year, dayNames[lt->tm_wday]);
-
-    return 0;
+  return 0;
 }
