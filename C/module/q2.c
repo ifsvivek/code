@@ -4,9 +4,9 @@
 
 int main()
 {
-  double a, b, c, d, root1, root2,real,img;
+  float a, b, c, d, root1, root2,real,img;
   printf("Input the value of a, b & c: ");
-  scanf("%lf %lf %lf", &a, &b, &c);
+  scanf("%f %f %f", &a, &b, &c);
   d = b * b - 4 * a * c;
 
   if (d > 0)
