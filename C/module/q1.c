@@ -4,7 +4,7 @@ int main() {
     char operator;
     float num1, num2, result = 0;
 
-    printf("Enter an operator (+, -, *, /): ");
+    printf("Choose an operator (+, -, *, /): ");
     scanf(" %c", &operator);
 
     printf("Enter two numbers: ");
@@ -33,6 +33,6 @@ int main() {
             return 1;
     }
 
-    printf("%0.2f %c %0.2f = %.2f\n", num1, operator, num2, result);
+    printf("%0.2f%c%0.2f = %.2f\n", num1, operator, num2, result);
     return 0;
 }
