@@ -42,7 +42,7 @@ int main()
     int index = binarySearch(arr, size, target);
 
     if (index != -1)
-        printf("Element %d found at index %d.\n", target, index);
+        printf("Element %d found at position %d.\n", target, index+1);
     else
         printf("Element %d not found in the array.\n", target);
 
