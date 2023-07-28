@@ -29,12 +29,12 @@ int main()
     double x;
     int terms;
 
-    printf("Enter the value of x in radians: ");
+    printf("Enter the value of x : ");
     scanf("%lf", &x);
 
     printf("Enter the number of terms to compute in the Taylor series: ");
     scanf("%d", &terms);
-
+    x=(x*3.14)/180;
     double taylorResult = taylorApproximation(x, terms);
     double libraryResult = tan(x);
 
