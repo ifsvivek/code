@@ -5,7 +5,7 @@ int main()
     char input[100], output[100];
 
     printf("Enter a string: ");
-    fgets(input, sizeof(input), stdin);
+    gets(input);
 
     int i = 0;
     while (input[i] != '\0')
