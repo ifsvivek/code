@@ -1,36 +1,28 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     char input[100], output[100];
 
     printf("Enter a string: ");
     gets(input);
 
     int i = 0;
-    while (input[i] != '\0')
-    {
+    while (input[i] != '\0'){
         char c = input[i];
 
-        if ((c >= 'a' && c < 'z') || (c >= 'A' && c < 'Z'))
-        {
+        if ((c >= 'a' && c < 'z') || (c >= 'A' && c < 'Z')){
             output[i] = c + 1;
         }
-        else if (c == 'z' || c == 'Z')
-        {
+        else if (c == 'z' || c == 'Z'){
             output[i] = c - 25;
         }
-        else
-        {
+        else{
             output[i] = c;
         }
-
         i++;
     }
 
     output[i] = '\0';
-
     printf("Modified string: %s\n", output);
-
     return 0;
 }
