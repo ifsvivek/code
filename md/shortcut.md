@@ -1,0 +1,31 @@
+# Shortcuts
+
+ | Action                                      |   Shortcut
+ | ------------------------------------------- |:-----------------------------
+ | Switch fullscreen mode                      | <kbd>MOD</kbd>+<kbd>f</kbd>
+ | Rotate display left                         | <kbd>MOD</kbd>+<kbd>←</kbd> _(left)_
+ | Rotate display right                        | <kbd>MOD</kbd>+<kbd>→</kbd> _(right)_
+ | Resize window to 1:1 (pixel-perfect)        | <kbd>MOD</kbd>+<kbd>g</kbd>
+ | Resize window to remove black borders       | <kbd>MOD</kbd>+<kbd>w</kbd> \| _Double-left-click¹_
+ | Click on `HOME`                             | <kbd>MOD</kbd>+<kbd>h</kbd> \| _Middle-click_
+ | Click on `BACK`                             | <kbd>MOD</kbd>+<kbd>b</kbd> \| <kbd>MOD</kbd>+<kbd>Backspace</kbd> \| _Right-click²_
+ | Click on `APP_SWITCH`                       | <kbd>MOD</kbd>+<kbd>s</kbd> \| _4th-click³_
+ | Click on `MENU` (unlock screen)⁴            | <kbd>MOD</kbd>+<kbd>m</kbd>
+ | Click on `VOLUME_UP`                        | <kbd>MOD</kbd>+<kbd>↑</kbd> _(up)_
+ | Click on `VOLUME_DOWN`                      | <kbd>MOD</kbd>+<kbd>↓</kbd> _(down)_
+ | Click on `POWER`                            | <kbd>MOD</kbd>+<kbd>p</kbd>
+ | Power on                                    | _Right-click²_
+ | Turn device screen off (keep mirroring)     | <kbd>MOD</kbd>+<kbd>o</kbd>
+ | Turn device screen on                       | <kbd>MOD</kbd>+<kbd>Shift</kbd>+<kbd>o</kbd>
+ | Rotate device screen                        | <kbd>MOD</kbd>+<kbd>r</kbd>
+ | Expand notification panel                   | <kbd>MOD</kbd>+<kbd>n</kbd> \| _5th-click³_
+ | Expand settings panel                       | <kbd>MOD</kbd>+<kbd>n</kbd>+<kbd>n</kbd> \| _Double-5th-click³_
+ | Collapse panels                             | <kbd>MOD</kbd>+<kbd>Shift</kbd>+<kbd>n</kbd>
+ | Copy to clipboard⁵                          | <kbd>MOD</kbd>+<kbd>c</kbd>
+ | Cut to clipboard⁵                           | <kbd>MOD</kbd>+<kbd>x</kbd>
+ | Synchronize clipboards and paste⁵           | <kbd>MOD</kbd>+<kbd>v</kbd>
+ | Inject computer clipboard text              | <kbd>MOD</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd>
+ | Enable/disable FPS counter (on stdout)      | <kbd>MOD</kbd>+<kbd>i</kbd>
+ | Pinch-to-zoom                               | <kbd>Ctrl</kbd>+_click-and-move_
+ | Drag & drop APK file                        | Install APK from computer
+ | Drag & drop non-APK file                    | [Push file to device](control.md#push-file-to-device)
