@@ -1,5 +1,9 @@
 # Shortcuts
 
+## use RCtrl for shortcuts
+scrcpy --shortcut-mod=rctrl
+
+
  | Action                                      |   Shortcut
  | ------------------------------------------- |:-----------------------------
  | Switch fullscreen mode                      | <kbd>MOD</kbd>+<kbd>f</kbd>
@@ -29,3 +33,9 @@
  | Pinch-to-zoom                               | <kbd>Ctrl</kbd>+_click-and-move_
  | Drag & drop APK file                        | Install APK from computer
  | Drag & drop non-APK file                    | [Push file to device](control.md#push-file-to-device)
+
+_¹Double-click on black borders to remove them._  
+_²Right-click turns the screen on if it was off, presses BACK otherwise._  
+_³4th and 5th mouse buttons, if your mouse has them._  
+_⁴For react-native apps in development, `MENU` triggers development menu._  
+_⁵Only on Android >= 7._
