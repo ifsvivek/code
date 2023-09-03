@@ -1,37 +1,48 @@
 /*
-Write a C program to print lower triangle of a square matrix.
-
-For example the output of a given matrix 
-2 3 4     will be     2 0 0
-5 6 7                 5 6 0
-4 5 6                 4 5 6
-
+Write a C program to print Largest and Smallest Word from a given sentence.
+If there are two or more words of same length then the first one is considered.
 */
 
 #include <stdio.h>
-int main()
-{
-int matrix[20][20];
-int i,j,r;
-   
-scanf("%d", &r); //Accepts number of rows or columns
+#include <string.h>
 
-    for(i=0;i< r;i++) //Accepts the matrix elements from the test case data
-    {
-        for(j=0;j<r; j++)
-        {
-            scanf("%d",&matrix[i][j]);
+int main() {
+    char str[100] = {0}, substr[100][100] = {0};
+    scanf("%[^\n]s", str);
+    int i = 0, j = 0, k = 0, a, minindex = 0, maxindex = 0, max = 0, min = 0;
+    char c;
+
+    while (str[k] != '\0') {
+        j = 0;
+        while (str[k] != ' ' && str[k] != '\0' && str[k] != '.') {
+            substr[i][j] = str[k];
+            k++;
+            j++;
+        }
+        substr[i][j] = '\0';
+        i++;
+        if (str[k] != '\0') {
+            k++;
         }
     }
 
-    for(i=0;i<r;i++){
-        for(j=0;j<r;j++){
-            if(i>=j)
-                printf("%d ",matrix[i][j]);
-           else
-                printf("%d ",0);
+    int len = i;
+    max = strlen(substr[0]);
+    min = strlen(substr[0]);
+
+    for (i = 0; i < len; i++) {
+        a = strlen(substr[i]);
+        if (a > max) {
+            max = a;
+            maxindex = i;
         }
-        printf("\n");
+        if (a < min) {
+            min = a;
+            minindex = i;
+        }
     }
+
+    printf("Largest Word is: %s\nSmallest word is: %s\n", substr[maxindex], substr[minindex]);
+
     return 0;
 }
