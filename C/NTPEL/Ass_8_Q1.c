@@ -1,33 +1,20 @@
-/*
-Write a C Program to find HCF of 4 given numbers using recursive function.
-*/
-
+//Write a C Program to find HCF of 4 given numbers using recursive function
 #include<stdio.h>
-int gcd(int, int); //You have to write this function which calculates the GCD. 
+int HCF(int, int); //You have to write this function which calculates the HCF. 
 	 
 int main()
 {
    int a, b, c, d, result;
    scanf("%d %d %d %d", &a, &b, &c, &d); /* Takes 4 number as input from the test data */
-   result = gcd(gcd(a, b), gcd(c,d));
-   printf("The GCD is %d", result);
+   result = HCF(HCF(a, b), HCF(c,d));
+   printf("The HCF is %d", result);
 }
 
-//Complete the rest of the program to calculate GCD
-int gcd(int a, int b) 
-{ 
-    // Everything divides 0  
-    if (a == 0) 
-       return b; 
-    if (b == 0) 
-       return a; 
-  
-    // base case 
-    if (a == b) 
-        return a; 
-  
-    // a is greater 
-    if (a > b) 
-        return gcd(a-b, b); 
-    return gcd(a, b-a); 
-} 
+//Complete the rest of the program to calculate HCF
+int HCF(int n1, int n2) {
+    if (n2 == 0) {
+        return n1;
+    } else {
+        return HCF(n2, n1 % n2);
+    }
+}
