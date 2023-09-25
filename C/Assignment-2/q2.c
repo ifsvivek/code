@@ -1,11 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char input[100], output[100];
-
-    printf("Enter a string: ");
-    gets(input);
-
+    char input[100]="programming in C is fun", output[100];
     int i = 0;
     while (input[i] != '\0'){
         char c = input[i];
