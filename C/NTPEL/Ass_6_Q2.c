@@ -14,16 +14,20 @@ int main() {
 
   for (i = 0; i < n; i++) 
      scanf("%d", &arr[i]); /*Accepts the elements of the array */
-
-    int temp;
-    for(i=0;i<n/2;i++){
-        temp=arr[i];
-        arr[i]=arr[n-i-1];
-        arr[n-i-1]=temp;
-    } 
-    for (i = 0; i < n; i++) {
-        printf("%d\n", arr[i]); // For printing the array elements 
-    }
+int j, temp;  
+j = i - 1;   // last Element of the array
+i = 0;       // first element of the array
+ 
+   while (i < j) {
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+      i++;             
+      j--;        
+   }
+for (i = 0; i < n; i++) {
+      printf("%d\n", arr[i]); // For printing the array elements 
+   }
  
    return (0);
 }

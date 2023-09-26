@@ -17,12 +17,3 @@ void main()
     }
 	printf("The Factorial of %d is : %ld",n,fact);
 }
-
-
-/*
-by for loop
-
-for(i=1;i<=n;i++){
-    fact=fact*i;
-}
-*/

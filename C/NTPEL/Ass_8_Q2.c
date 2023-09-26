@@ -6,22 +6,21 @@ Write a C Program to find power of a given number using recursion. The number an
 long power(int, int);
 int main()
 {
-    int pow, num;
-    long result;
-    
-    scanf("%d", &num); //The number taken as input from test case data 
-    
-    scanf("%d", &pow); //The power is taken from the test case 
-    result = power(num, pow);
-    printf("%d^%d is %ld", num, pow, result);
-    return 0;
-}
+int pow, num;
+long result;
 
-long power(int num,int pow)
+scanf("%d", &num); //The number taken as input from test case data 
+
+scanf("%d", &pow); //The power is taken from the test case 
+result = power(num, pow);
+printf("%d^%d is %ld", num, pow, result);
+return 0;
+}
+long power(int num, int pow)
 {
-  long ans=1;
-  for(int i=1;i<=pow;i++){
-    ans = ans*num;
-  }
-  return ans;
+if (pow)
+{
+return (num * power(num, pow - 1));
+}
+return 1;
 }

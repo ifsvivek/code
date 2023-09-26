@@ -31,8 +31,7 @@ int main()
     }
 /*Complete the code to print the sum of each rows. Use the printf() statement as
  printf("%d\n",sum); Where sum is the sum of a row. 
-*/  
-
+*/
     int index=1;
     int array[index];
     for(i=0;i<r;i++){

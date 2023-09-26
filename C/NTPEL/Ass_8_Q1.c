@@ -11,10 +11,18 @@ int main()
 }
 
 //Complete the rest of the program to calculate HCF
-int HCF(int n1, int n2) {
-    if (n2 == 0) {
-        return n1;
-    } else {
-        return HCF(n2, n1 % n2);
+int HCF(int x, int y)
+{
+   while (x != y)
+   {
+      if (x > y)
+       {
+           return HCF(x - y, y);
+       }
+       else
+       {
+       return HCF(x, y - x);
+       }
     }
+    return x;
 }

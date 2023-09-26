@@ -13,7 +13,6 @@ int main()
 
   printf("Enter the name of the user: ");
   gets(name);
-  //scanf("%s", name);
   printf("Enter the number of units consumed: ");
   scanf("%d", &units);
 
