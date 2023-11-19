@@ -67,17 +67,17 @@ void selection_sort(int a[], int n)
 int main()
 {
     int n, i, choice;
-    printf("enter the number of elements in array\n");
+    printf("Enter the number of elements in array\n");
     scanf("%d", &n);
     int a[1000];
-    printf("enter the elememts\n");
+    printf("Enter the elements\n");
     for (i = 0; i < n; i++)
     {
-        scanf("%d", a[i]);
+        scanf("%d", &a[i]);
     }
     while (1)
     {
-        printf("enter your choice:\n1.for linear search\n2.for binary search\n3.for selection sort\n4.for exit");
+        printf("Enter your choice:\n1. for linear search\n2. for binary search\n3. for selection sort\n4. for exit\n");
         scanf("%d", &choice);
         switch (choice)
         {
@@ -93,7 +93,7 @@ int main()
         case 4:
             exit(0);
         default:
-            printf("\ninvalid choice");
+            printf("\nInvalid choice\n");
         }
     }
     return 0;
