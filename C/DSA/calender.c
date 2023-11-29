@@ -1,51 +1,64 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-struct Calender{
-    char *name, *des;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Calendar {
+    char *name;
+    char *description;
     int day;
 };
-typedef struct Calender cal;
 
-cal* create(){
-    return((cal* ) malloc(7*sizeof(cal)));
+typedef struct Calendar Cal;
+
+Cal* create() {
+    return (Cal*)malloc(7 * sizeof(Cal));
 }
-void read(cal *d){
-    int i, flag;
+
+void read(Cal* days) {
+    int dayIndex, flag;
     char temp[50];
-    for(i=0;i<7;i++){
-        d[i].name=NULL;
-        d[i].day=-1;
-        d[i].des=NULL;
+
+    for (int i = 0; i < 7; i++) {
+        days[i].name = NULL;
+        days[i].day = -1;
+        days[i].description = NULL;
     }
-    do{
+
+    do {
         printf("Enter the day Number: ");
-        scanf("%d",&i);
-        if(i<0 || i>6){
-            printf("Invalid Input");
-        }
-        else{
-            d[i].day=-1;
+        scanf("%d", &dayIndex);
+
+        if (dayIndex < 0 || dayIndex > 6) {
+            printf("Invalid Input\n");
+        } else {
+            days[dayIndex].day = dayIndex;
             printf("Enter the day name and description: ");
-            scanf("%s",temp);
-            d[i].name=strdup(temp);
-            scanf("%s",temp);
-            d[i].des=strdup(temp);
+            scanf("%s", temp);
+            days[dayIndex].name = strdup(temp);
+            scanf("%s", temp);
+            days[dayIndex].description = strdup(temp);
         }
-        printf("Enter 1 for more activities else 0: ");
-        scanf("%d",&flag);
-    }while(flag!=0);
+
+        printf("Enter 1 for more activities, else 0: ");
+        scanf("%d", &flag);
+    } while (flag != 0);
 }
 
-void display(cal *d){
+void display(Cal* days) {
     printf("Day\t\tDay Number\t\tDescriptions\n");
-    for (int i = 0; i <7; i++){
-        printf("%s\t\t%d\t\t\t%s\n",d[i].name,d[i].day,d[i].des);
-    }  
+
+    for (int i = 0; i < 7; i++) {
+        if (days[i].day != -1) {
+            printf("%s\t\t%d\t\t\t%s\n", days[i].name, days[i].day, days[i].description);
+        }
+    }
 }
-int main(){
-    cal *d=create();
-    read(d);
-    display(d);
-    free(d);
+
+int main() {
+    Cal* days = create();
+    read(days);
+    display(days);
+    free(days);
+
+    return 0;
 }
