@@ -21,12 +21,11 @@ void read(cal *d){
     do{
         printf("Enter the day Number: ");
         scanf("%d",&i);
-        i--;
         if(i<0 || i>6){
             printf("Invalid Input");
         }
         else{
-            d[i].day=1;
+            d[i].day=-1;
             printf("Enter the day name and description: ");
             scanf("%s",temp);
             d[i].name=strdup(temp);
