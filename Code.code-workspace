@@ -6,6 +6,7 @@
 	],
 	"settings": {
 		"files.associations": {
+			"*.json": "json",
 			"array": "cpp",
 			"atomic": "cpp",
 			"bit": "cpp",
@@ -94,7 +95,8 @@
 			"thread": "cpp",
 			"typeindex": "cpp",
 			"valarray": "cpp",
-			"variant": "cpp"
+			"variant": "cpp",
+			"hms.cpp": "c"
 		},
 		"cSpell.language": "en-GB"
 	}

@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
+#include <pthread.h>
+
+#define NUM_THREADS 12
 
 char *randstring(size_t len)
 {
-
     static char charset[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     char *random = NULL;
 
@@ -15,7 +16,7 @@ char *randstring(size_t len)
 
         if (random)
         {
-            for (int n = 0; n < len; n++)
+            for (size_t n = 0; n < len; n++)
             {
                 int key = rand() % (int)(sizeof(charset) - 1);
                 random[n] = charset[key];
@@ -28,22 +29,21 @@ char *randstring(size_t len)
     return random;
 }
 
-int main()
+void *thread_function(void *thread_arg)
 {
+    int *thread_id = (int *)thread_arg;
     int c = 1;
-    double time = 0.0;
-    clock_t start = clock();
 
-    while (2 < 3)
+    while (1)
     {
-        char HEE[10];
+        char HEE[11];
 
         for (int i = 0; i < 10; i++)
         {
-            HEE[i] = NULL;
+            HEE[i] = '\0';
         }
 
-        char HE[10];
+        char HE[11];
         strcpy(HEE, randstring(10));
         HE[0] = 'H';
         HE[1] = 'E';
@@ -55,16 +55,36 @@ int main()
         HE[7] = 'R';
         HE[8] = 'L';
         HE[9] = 'D';
-        if (strcmp(HEE, HE))
+        HE[10] = '\0';
+
+        if (strcmp(HE, HEE) == 0)
         {
-            printf("Success at %ith attempt", c);
-            break;
+            printf("Thread %d: Success at %dth attempt\n", *thread_id, c);
+            printf("%s\n", HE);
+            printf("%s\n", HEE);
+            pthread_exit(NULL);
         }
         c++;
     }
-    clock_t end = clock();
-    time += (double)(end - start);
-    printf("Time Taken: %lf", time);
+}
+
+int main()
+{
+    pthread_t threads[NUM_THREADS];
+    int thread_ids[NUM_THREADS];
+
+    srand((unsigned int)time(NULL));
+
+    for (int i = 0; i < NUM_THREADS; i++)
+    {
+        thread_ids[i] = i;
+        pthread_create(&threads[i], NULL, thread_function, (void *)&thread_ids[i]);
+    }
+
+    for (int i = 0; i < NUM_THREADS; i++)
+    {
+        pthread_join(threads[i], NULL);
+    }
 
     return 0;
 }
