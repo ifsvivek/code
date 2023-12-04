@@ -23,6 +23,7 @@ class Calculator{
                 }
                 else{
                     c=(float)a/b;
+                    break;
                 }    
             default:
                     System.out.println("Invalid Input");
