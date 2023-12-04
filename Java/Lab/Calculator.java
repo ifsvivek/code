@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Calculator{
     public static void main(String[] args) {
-        java.util.Scanner s= new Scanner(System.in);
+        Scanner s= new Scanner(System.in);
         int a,b;
         float c=0;
         System.out.println("Enter 2 numbers: ");
