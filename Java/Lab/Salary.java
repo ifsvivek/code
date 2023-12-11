@@ -14,7 +14,7 @@ class Employee {
         System.out.println(id+"\t"+name+"\t"+salary);
     }
     void raise(double percentage){
-        salary+=(percentage/100);
+        salary+=(percentage/100)*salary;
     }
 }
 public class Salary {
@@ -27,7 +27,7 @@ public class Salary {
             e[i]= new Employee();
             e[i].read();
         }
-        System.out.println("ID\tName\tSalary");
+        System.out.println("ID\tName\tSalary\n");
         for( int i=0;i<n;i++){
             e[i].display();
         }
