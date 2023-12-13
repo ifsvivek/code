@@ -49,7 +49,6 @@ void replacePattern(char *str, const char *pattern, const char *replaceStr) {
         }
     }
 }
-
 int main() {
     char mainStr[100], pattern[50], replaceStr[50];
 
