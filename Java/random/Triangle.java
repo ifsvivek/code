@@ -1,9 +1,9 @@
-public class Triangle {
+public class triangle {
     private double side1, side2, side3;
-    public Triangle() {
+    public triangle() {
         side1 = side2 = side3 = 0;
     }
-    public Triangle(double side1, double side2, double side3) {
+    public triangle(double side1, double side2, double side3) {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -24,15 +24,15 @@ public class Triangle {
         }
     }
     public static void main(String[] args) {
-        Triangle triangle1 = new Triangle(3, 4, 5);
+        triangle triangle1 = new triangle(3, 4, 5);
         System.out.println("Area of triangle1: " + triangle1.Area());
         System.out.println("Type of triangle1: " + triangle1.Check());
 
-        Triangle triangle2 = new Triangle(5, 5, 5);
+        triangle triangle2 = new triangle(5, 5, 5);
         System.out.println("Area of triangle2: " + triangle2.Area());
         System.out.println("Type of triangle2: " + triangle2.Check());
 
-        Triangle triangle3 = new Triangle(2, 3, 7);
+        triangle triangle3 = new triangle(2, 3, 7);
         System.out.println("Area of triangle3: " + triangle3.Area());
         System.out.println("Type of triangle3: " + triangle3.Check());
     }
