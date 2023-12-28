@@ -96,7 +96,8 @@
 			"typeindex": "cpp",
 			"valarray": "cpp",
 			"variant": "cpp",
-			"hms.cpp": "c"
+			"hms.cpp": "c",
+			"string.h": "c"
 		},
 		"cSpell.language": "en-GB"
 	}

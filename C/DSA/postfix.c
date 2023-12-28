@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+=======
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+>>>>>>> 48b6555b00a9f6d454da4521884474842adbff5d
 #include <math.h>
 
 #define MAX_SIZE 20
@@ -77,7 +84,11 @@ int main() {
 
     printf("Enter POSTFIX expression: ");
     fgets(postfix, 30, stdin);
+<<<<<<< HEAD
     postfix[strcspn(postfix, "\n")] = '\0';
+=======
+    postfix[strcspn(postfix, "\n")] = '\0'; // Remove potential newline from fgets
+>>>>>>> 48b6555b00a9f6d454da4521884474842adbff5d
 
     int result = evaluatePostfix(postfix);
 
