@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-=======
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
->>>>>>> 38d4793c9a40fdad55f737e7636c78e1df14d4e7
 #include <math.h>
 
 #define MAX_SIZE 20
