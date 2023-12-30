@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-void tower(int n, char source, char temp, char destination) {
+void tower(int n, char source, char temp, char dest) {
     if (n == 1) {
-        printf("Move disk 1 from %c to %c\n", source, destination);
+        printf("Move disk 1 from %c to %c\n", source, dest);
         return;
     }
 
-    tower(n - 1, source, destination, temp);
-    printf("Move disk %d from %c to %c\n", n, source, destination);
-    tower(n - 1, temp, source, destination);
+    tower(n - 1, source, dest, temp);
+    printf("Move disk %d from %c to %c\n", n, source, dest);
+    tower(n - 1, temp, source, dest);
 }
 
 int main() {
