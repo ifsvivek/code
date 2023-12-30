@@ -85,10 +85,6 @@ int main() {
     printf("Enter POSTFIX expression: ");
     fgets(postfix, 30, stdin);
     postfix[strcspn(postfix, "\n")] = '\0';
-<<<<<<< HEAD
-
-=======
->>>>>>> 38d4793c9a40fdad55f737e7636c78e1df14d4e7
     int result = evaluatePostfix(postfix);
 
     printf("Result: %d\n", result);
