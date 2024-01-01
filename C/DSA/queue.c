@@ -34,8 +34,7 @@ void Display(){
         printf("Queue is Empty\n");
     else{
         i = front;
-        for (j = 0; j < count; j++)
-        {
+        for (j = 0; j < count; j++){
             printf("%c ", q[i]);
             i = (i + 1) % MAX;
         }
