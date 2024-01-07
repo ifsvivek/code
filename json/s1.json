@@ -1,0 +1,138 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.inlineSuggest.enabled": true,
+    "code-runner.runInTerminal": true,
+    "files.exclude": {
+      "**/*.class": true,
+      "**/*.code-workspace": true,
+      "**/*.exe": true,
+      "**/*.out": true
+    },
+    "workbench.localHistory.exclude": {
+      "**/*.class": true,
+      "**/*.code-workspace": true,
+      "**/*.exe": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "material-icon-theme.folders.associations": {
+      "practice": "scala",
+      "C": "cobol",
+      "c++": "core",
+      "ardrino": "animation",
+      "verilog": "Vm",
+      "gpu": "delta",
+      "mathlab": "mjml",
+      "college": "home",
+      "lab": "robot",
+      "random": "mock",
+      "dsa": "mappings"
+    },
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.editorAssociations": {
+      "*.ppt": "default",
+      "*.pptx": "default",
+      "*.docx": "cweijan.officeViewer",
+      "*.png": "imagePreview.previewEditor",
+      "*.zip": "default"
+    },
+    "debug.onTaskErrors": "showErrors",
+    "files.autoSave": "afterDelay",
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.idle.check": false,
+    "vscord.ignore.workspacesText": "",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "vscode-office.previewCodeHighlight.style": "solarized-light",
+    "git.confirmSync": false,
+    "vscode-office.openOutline": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "redhat.telemetry.enabled": false,
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+      "*.json": "json",
+      "*.css": "tailwindcss"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "remoteHub.commitDirectlyWarning": "off",
+    },
+    "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[c]": {
+      "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "git.ignoreRebaseWarning": true,
+    "editor.minimap.enabled": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "[cpp]": {
+      "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[java]": {
+      "editor.defaultFormatter": "redhat.java"
+    },
+    "remote.SSH.remotePlatform": {
+      "localhost": "linux"
+    },
+    "code-runner.executorMapByFileExtension": {
+      ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+      ".vbs": "cscript //Nologo",
+      ".scala": "scala",
+      ".jl": "julia",
+      ".cr": "crystal",
+      ".ml": "ocaml",
+      ".zig": "zig run",
+      ".exs": "elixir",
+      ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+      ".rkt": "racket",
+      ".scm": "csi -script",
+      ".ahk": "autohotkey",
+      ".au3": "autoit3",
+      ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+      ".kts": "kotlinc -script",
+      ".dart": "dart",
+      ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+      ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+      ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+      ".hs": "runhaskell",
+      ".nim": "nim compile --verbosity:0 --hints:off --run",
+      ".csproj": "dotnet run --project",
+      ".fsproj": "dotnet run --project",
+      ".lisp": "sbcl --script",
+      ".kit": "kitc --run",
+      ".v": "cd $dir && iverilog -o $fileNameWithoutExt.out $fileName && vvp $fileNameWithoutExt.out",
+      ".vsh": "v run",
+      ".sass": "sass --style expanded",
+      ".cu": "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      ".ring": "ring",
+      ".sml": "cd $dir && sml $fileName",
+      ".mojo": "mojo run"
+    },
+    "[svelte]": {
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "svelte.enable-ts-plugin": true,
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.postCommitCommand": "sync",
+    "editor.quickSuggestions": {
+      "strings": "on"
+    },
+    "problems.autoReveal": false,
+    "problems.decorations.enabled": false
+}  
