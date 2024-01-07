@@ -68,7 +68,6 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "remoteHub.commitDirectlyWarning": "off",
-    },
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "One Dark Pro",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -135,4 +134,4 @@
     },
     "problems.autoReveal": false,
     "problems.decorations.enabled": false
-}  
+  }  
