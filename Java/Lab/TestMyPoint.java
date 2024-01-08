@@ -52,7 +52,7 @@ public class TestMyPoint {
         System.out.println("point p2=");
         System.out.println(P2);
         System.out.println("Distance between the point P1 & (2,3) is=" + P1.Distance(2, 3));
-        System.out.println("Distacnce from P1 to origin =" + P1.Distance());
+        System.out.println("Distance from P1 to origin =" + P1.Distance());
         System.out.println("Distance between P1 & P2 =" + P1.Distance(P2));
     }
 }
