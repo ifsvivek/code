@@ -8,3 +8,4 @@ txt/
 **/*.mp4
 **/*.out
 C/train
+tailwind.config.js
