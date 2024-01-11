@@ -35,6 +35,6 @@ void main()
     awt = awt / n;
     for (i = 0; i < n; i++)
         printf("\n%d\t %d\t %d\t %d\t %d\t %d\t ", p[i], at[i], bt[i], ct[i], tat[i], wt[i]);
-    printf("\n ATAT=%d", atat);
-    printf("\n WT=%d", wt);
+    printf("\n ATAT=%f", atat);
+    printf("\n WT=%f", wt);
 }
