@@ -19,7 +19,7 @@ int main() {
 
     if (n < 1) {
         printf("Number of disks should be at least 1.\n");
-        return 1; // Error exit code
+        return 1;
     }
 
     printf("Tower of Hanoi solution for %d disks:\n", n);

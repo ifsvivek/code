@@ -10,9 +10,7 @@ void findreplace(char *text,char *pat,char *rep ){
 		if(pat[j]=='\0'){
 			found=1;
 			for(l=0;rep[l]!='\0';l++)
-			{
-							ans[k++]=rep[l];				
-			}
+				ans[k++]=rep[l];				
 			i=i+j-1;
 		}
 		else

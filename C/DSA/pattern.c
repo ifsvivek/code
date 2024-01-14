@@ -6,9 +6,8 @@ void readString(char *str, const char *message) {
 
 int stringLength(const char *str) {
     int length = 0;
-    while (str[length] != '\0') {
+    while (str[length] != '\0')
         length++;
-    }
     return length;
 }
 
@@ -36,13 +35,11 @@ void replacePattern(char *str, const char *pattern, const char *replaceStr) {
         int patLen = stringLength(pattern);
         int replaceLen = stringLength(replaceStr);
         int strLen = stringLength(str);
-        for (i = strLen + replaceLen - 1, j = strLen - 1; j >= start + patLen; i--, j--) {
+        for (i = strLen + replaceLen - 1, j = strLen - 1; j >= start + patLen; i--, j--)
             str[i] = str[j];
-        }
 
-        for (i = start, j = 0; j < replaceLen; i++, j++) {
+        for (i = start, j = 0; j < replaceLen; i++, j++)
             str[i] = replaceStr[j];
-        }
     }
 }
 int main() {
@@ -56,9 +53,8 @@ int main() {
     if (findPattern(mainStr, pattern, &start)) {
         replacePattern(mainStr, pattern, replaceStr);
         printf("Pattern found and replaced:\n%s\n", mainStr);
-    } else {
+    } else
         printf("Pattern not found in the main string.\n");
-    }
 
     return 0;
 }
