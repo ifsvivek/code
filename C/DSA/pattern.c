@@ -1,4 +1,4 @@
-
+#include<stdio.h>
 void readString(char *str, const char *message) {
     printf("Enter %s: ", message);
     scanf("%s", str);
