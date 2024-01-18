@@ -1,37 +1,48 @@
 #include <stdio.h>
 
 int main() {
-  int time, bt[10], at[10], sbt = 0, smallest, n, i;
-  float sum_tat = 0, sum_wt = 0;
+    int p[20], bt[20], wt[20], tat[20], i, k, n, temp;
+    float wtavg, tatavg;
 
-  printf("Enter the no. of processes: ");
-  scanf("%d", &n);
+    printf("\nEnter the number of processes -- ");
+    scanf("%d", &n);
 
-  for (i = 0; i < n; i++) {
-    printf("The AT of Process P%d: ", i + 1);
-    scanf("%d", &at[i]);
-    printf("The BT of Process P%d: ", i + 1);
-    scanf("%d", &bt[i]);
-    sbt += bt[i];
-  }
-
-  for (time = 0; time < sbt;) {
-    smallest = 9;
     for (i = 0; i < n; i++) {
-      if (at[i] <= time && bt[i] > 0 && bt[i] < bt[smallest]) {
-        smallest = i;
-      }
+        p[i] = i;
+        printf("Enter Burst Time for Process %d : ", i);
+        scanf("%d", &bt[i]);
+    }
+    for (i = 0; i < n - 1; i++) {
+        for (k = 0; k < n - i - 1; k++) {
+            if (bt[k] > bt[k + 1]) {
+                temp = bt[k];
+                bt[k] = bt[k + 1];
+                bt[k + 1] = temp;
+
+                temp = p[k];
+                p[k] = p[k + 1];
+                p[k + 1] = temp;
+            }
+        }
     }
 
-    printf("P[%d]\t|\t%d\t|\t%d\n", smallest + 1, time + bt[smallest] - at[smallest], time - at[smallest]);
-    sum_tat += time + bt[smallest] - at[smallest];
-    sum_wt += time - at[smallest];
-    time += bt[smallest];
-    bt[smallest] = 0;
-  }
+    wt[0] = 0;
+    tat[0] = wt[0] + bt[0];
+    wtavg = wt[0];
+    tatavg = tat[0];
 
-  printf("\n\nAWT = %f\n", sum_wt * 1.0 / n);
-  printf("\n\nATAT = %f\n", sum_tat * 1.0 / n);
+    for (i = 1; i < n; i++) {
+        wt[i] = wt[i - 1] + bt[i - 1];
+        tat[i] = wt[i] + bt[i];
+        wtavg += wt[i];
+        tatavg += tat[i];
+    }
+    printf("\n\t PROCESS  \t BURST TIME \t WAITING TIME \t TURNAROUND TIME\n");
 
-  return 0;
+    for (i = 0; i < n; i++) {
+        printf("\n\t P%d \t\t %d \t\t %d \t\t %d", p[i], bt[i], wt[i], tat[i]);
+    }
+    printf("\nAverage Waiting Time -- %f", wtavg / n);
+    printf("\nAverage Turnaround Time -- %f", tatavg / n);
+    return 0;
 }
