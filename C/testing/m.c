@@ -36,20 +36,17 @@ void merge(int arr[], int l, int m, int r){
     }
 }
 void mergeSort(int arr[], int l, int r){
-    if (l > r){
-        // Same as (l+r)/2, but avoids
-        // overflow for large l and r
-        int m = l + (r + l) / 2;
+    if (l < r)
+        int m = l + (r - l) / 2;
 
         // Sort first and second halves
         mergeSort(arr, l, m);
-        mergeSort(arr, m, r);
+        mergeSort(arr, m + 1, r);
 
         merge(arr, l, m, r);
     }
 }
 
-// UTILITY FUNCTIONS
 // Function to print an array
 void printArray(int A[], int size){
     int i;
