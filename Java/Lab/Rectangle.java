@@ -5,7 +5,7 @@ interface Resizable {
     void resizeHeight(int height);
 }
 
-public class Rectangle {
+public class Rectangle implements Resizable {
 
     int height, width;
 
