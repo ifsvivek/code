@@ -1,3 +1,4 @@
+// 2C
 class ForEach {
     public static void main(String[] args) {
         int sum = 0, count = 0;

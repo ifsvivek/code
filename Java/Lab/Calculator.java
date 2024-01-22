@@ -1,3 +1,4 @@
+// 2B
 import java.util.Scanner;
 
 class Calculator {

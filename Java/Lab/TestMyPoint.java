@@ -1,3 +1,4 @@
+// 4
 class Mypoint {
     int x, y;
 
