@@ -11,8 +11,8 @@ node *start= NULL;
 
 node* getNode(){
     node *newNode= (node*)malloc(sizeof(node));
-    printf("Enter Data");
-    scanf("%d",newNode->data);
+    printf("Enter Data: ");
+    scanf("%d",&(newNode->data));
     newNode->next=NULL;
     newNode->prev=NULL;
     return newNode;
@@ -60,7 +60,7 @@ void deleteBegin() {
 void deleteEnd(){
     node *temp=start;
     if(start==NULL)
-        printf("List is empty");
+        printf("List is empty\n");
     else if (start->next==NULL){
         printf("Deleted Node is %d\n",temp->data);
         start->next=NULL;
@@ -100,7 +100,7 @@ int countNodes() {
 node *search() {
     node* temp = start;
     int key;
-    printf("Enter the key");
+    printf("Enter the key: ");
     scanf("%d",&key);
     if (temp == NULL)
         printf("List is empty\n");
@@ -108,9 +108,9 @@ node *search() {
         while(temp->next!=NULL && temp->data!=key)
             temp=temp->next;
         if(temp==NULL)
-            printf("Key not found");
+            printf("Key not found\n");
         else
-            printf("Key found");
+            printf("Key found\n");
         return temp;
     }
 }
