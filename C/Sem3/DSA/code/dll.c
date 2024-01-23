@@ -19,7 +19,8 @@ node* getNode(){
 }
 
 void insertBegin() {
-    node* newNode,*temp=start;
+
+    node* newNode = getNode(),*temp=start;
     if (start == NULL)
         start = newNode;
     else {
@@ -96,7 +97,7 @@ int countNodes() {
 }
 
 
-int search() {
+node *search() {
     node* temp = start;
     int key;
     printf("Enter the key");
@@ -133,7 +134,7 @@ void insertAfter(){
     if(temp==NULL)
         printf("List is empty\n");
     else if(temp->next==NULL)
-        insertEnd():
+        insertEnd();
     else{
         newNode=getNode();
         newNode->next=temp->next;
@@ -149,7 +150,7 @@ void insertBefore(){
     if(temp==NULL)
         printf("List is empty\n");
     else if(temp->next==NULL)
-        insertBegin():
+        insertBegin();
     else{
         newNode=getNode();
         newNode->next=temp->next;
@@ -171,10 +172,10 @@ void deleteKey(){
     }
 }
 
-int main() {
+void main() {
     int choice;
 
-    do {
+    while(1) {
         printf("\n\n------ Doubly Linked List Menu ------\n");
         printf("1. Insert at the Beginning\n");
         printf("2. Insert at the End\n");
@@ -187,7 +188,7 @@ int main() {
         printf("9. Insert After a Node\n");
         printf("10. Insert Before a Node\n");
         printf("11. Delete a Node\n");
-        printf("0. Exit\n");
+        printf("12. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -226,14 +227,11 @@ int main() {
             case 11:
                 deleteKey();
                 break;
-            case 0:
+            case 12:
                 printf("Exiting the program.\n");
-                break;
+                exit(0);
             default:
                 printf("Invalid choice. Please try again.\n");
         }
-
-    } while (choice != 0);
-
-    return 0;
+    }
 }
