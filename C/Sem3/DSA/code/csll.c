@@ -105,7 +105,7 @@ int countNodes() {
 int main() {
     int choice, value;
 
-    do {
+    while(1) {
         printf("\n\n------ Circular Singly Linked List Menu ------\n");
         printf("1. Insert at the End\n");
         printf("2. Delete from the Beginning\n");
@@ -140,8 +140,5 @@ int main() {
             default:
                 printf("Invalid choice. Please try again.\n");
         }
-
-    } while (choice != 0);
-
-    return 0;
+    }
 }
