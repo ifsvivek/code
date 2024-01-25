@@ -367,7 +367,6 @@ void main() {
                 deleteafterkey();
                 break;
             case 12:
-                // Assuming you have two lists, modify this accordingly
                 start = concat(start, start); 
                 break;
             case 13:
