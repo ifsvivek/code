@@ -7,14 +7,14 @@ class Outer {
         private int y = 20;
 
         void display() {
-            System.out.println("x + y = " + (x + y));
+            System.out.println("X: "+x+" Y:"+y);
         }
     }
 
     void display() {
         Inner i = new Inner();
         i.display();
-        System.out.println("y = " + i.y);
+        System.out.println("y: " + i.y);
     }
 }
 
