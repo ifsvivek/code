@@ -1,4 +1,4 @@
-// 6B
+// 6
 abstract class Shape {
     abstract void calArea();
 

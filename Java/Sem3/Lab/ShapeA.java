@@ -1,4 +1,4 @@
-// 6A
+// 5
 abstract class Shape {
     abstract void draw();
 
