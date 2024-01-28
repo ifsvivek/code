@@ -1,8 +1,9 @@
 // 8
 class Outer {
 
+    private int x = 10;
+
     class Inner {
-        private int x = 10;
         private int y = 20;
 
         void display() {
