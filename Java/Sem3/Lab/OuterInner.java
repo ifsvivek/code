@@ -14,7 +14,7 @@ class Outer {
     void display() {
         Inner i = new Inner();
         i.display();
-        System.out.println("y: " + i.y);
+        System.out.println("Y: " + i.y);
     }
 }
 
