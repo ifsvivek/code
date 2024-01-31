@@ -1,3 +1,6 @@
+// Simulate the following CPU scheduling algorithms to find turnaround time and waiting time 
+// a) FCFS
+
 #include <stdio.h>
 void main()
 {
