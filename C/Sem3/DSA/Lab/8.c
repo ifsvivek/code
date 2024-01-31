@@ -98,29 +98,17 @@ int main(){
         printf("Enter your choice \n1. InsertEnd\n2. InsertBegin\n3. DeleteBegin\n4. DeleteEnd\n5. Display\n6. Exit\n");
         scanf("%d", &choice);
         switch (choice){
-        case 1:
-            printf("Enter the no of employees\n");
-            scanf("%d", &n);
-            for (i = 0; i < n; i++)
-                insertend();
-            break;
-        case 2:
-            insertbegin();
-            break;
-        case 3:
-            deletebegin();
-            break;
-        case 4:
-            deleteend();
-            break;
-        case 5:
-            display();
-            break;
-        case 6:
-            exit(0);
-            break;
-        default:
-            printf("Invalid choice\n");
+        case 1: printf("Enter the no of employees\n");
+                scanf("%d", &n);
+                for (i = 0; i < n; i++)
+                    insertend();
+                break;
+        case 2: insertbegin();break;
+        case 3: deletebegin();break;
+        case 4: deleteend();break;
+        case 5: display();break;
+        case 6: exit(0);break;
+        default:printf("Invalid choice\n");
         }
     }
 }
