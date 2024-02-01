@@ -10,7 +10,7 @@ int main(){
     char buf[MAX_BUF];
     fd=open(myfifo,O_RDWR);
     read(fd,buf,MAX_BUF);
-    printf("Writer; %s\n",buf);
+    printf("Writer: %s\n",buf);
     close(fd);
     return 0;
 }
