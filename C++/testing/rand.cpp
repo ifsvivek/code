@@ -1,12 +1,11 @@
 #include <iostream>
-#include <string>
 #include <random>
+#include <string>
 #include <thread>
 
 using namespace std;
 
-int main()
-{
+int main() {
   mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
   string str;
@@ -14,10 +13,8 @@ int main()
 
   vector<thread> threads;
 
-  for (int i = 0; i < 12; i++)
-  {
-    threads.emplace_back([&]()
-                         {
+  for (int i = 0; i < 12; i++) {
+    threads.emplace_back([&]() {
       while (str != "hello world") {
         str = string(10, ' ');
 
@@ -27,15 +24,16 @@ int main()
 
         iterations++;
         cout << str << endl;  // Display each generated output
-      } });
+      }
+    });
   }
 
-  for (auto &t : threads)
-  {
+  for (auto &t : threads) {
     t.join();
   }
 
-  cout << "It took " << iterations << " iterations to find 'hello world'." << endl;
+  cout << "It took " << iterations << " iterations to find 'hello world'."
+       << endl;
 
   return 0;
 }

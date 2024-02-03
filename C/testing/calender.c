@@ -6,7 +6,7 @@ int main() {
   scanf("%d/%d/%d", &day, &month, &year);
 
   // Calculate the day of the week
-  int dayOfWeek = (year + (year / 4) - (year / 100) + (year / 400) + month * 2 + day) % 7;
+  int dayOfWeek =(year + (year / 4) - (year / 100) + (year / 400) + month * 2 + day) % 7;
 
   // Print the day of the week
   switch (dayOfWeek) {
