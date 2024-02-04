@@ -3,29 +3,30 @@
 #include <stdlib.h>
 struct polynomial {
   int coeff, expo1, expo2, expo3;
-  struct polynomial *next;
+  struct polynomial* next;
   int flag;
 };
 typedef struct polynomial node;
-node *getnode() {
-  node *newnode = (node *)malloc(sizeof(node));
+node* getnode() {
+  node* newnode = (node*)malloc(sizeof(node));
   newnode->next = NULL;
   newnode->flag = 0;
   return newnode;
 }
-node *insertend(node *head, int c, int x, int y, int z) {
+node* insertend(node* head, int c, int x, int y, int z) {
   node *newnode, *temp = head->next;
   newnode = getnode();
   newnode->coeff = c;
   newnode->expo1 = x;
   newnode->expo2 = y;
   newnode->expo3 = z;
-  while (temp->next != head) temp = temp->next;
+  while (temp->next != head)
+    temp = temp->next;
   temp->next = newnode;
   newnode->next = head;
   return head;
 }
-node *readpoly(node *head) {
+node* readpoly(node* head) {
   int i, n, c, x, y, z;
   printf("enter the no of terms\n");
   scanf("%d", &n);
@@ -36,33 +37,37 @@ node *readpoly(node *head) {
   }
   return head;
 }
-void printpoly(node *head) {
-  node *temp = head->next;
+void printpoly(node* head) {
+  node* temp = head->next;
   while (temp->next != head) {
-    printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2,temp->expo3);
+    printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2,
+           temp->expo3);
     temp = temp->next;
   }
-  printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2,temp->expo3);
+  printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2,
+         temp->expo3);
 }
-void evaluate(node *head) {
-  node *temp = head->next;
+void evaluate(node* head) {
+  node* temp = head->next;
   int sum = 0, x, y, z;
   printf("enter the value of x y and z");
   scanf("%d%d%d", &x, &y, &z);
   while (temp != head) {
-    sum = sum + temp->coeff * pow(x, temp->expo1) * pow(y, temp->expo2) * pow(z, temp->expo3);
+    sum = sum + temp->coeff * pow(x, temp->expo1) * pow(y, temp->expo2) *
+                    pow(z, temp->expo3);
     temp = temp->next;
   }
   printf("the evlauated result of a polynomial is %d\n", sum);
 }
-node *addpoly(node *h1, node *h2, node *h3) {
+node* addpoly(node* h1, node* h2, node* h3) {
   node *p1, *p2;
   int c;
   p1 = h1->next;
   while (p1 != h1) {
     p2 = h2->next;
     while (p2 != h2) {
-      if (p1->expo1 == p2->expo1 && p1->expo2 == p2->expo2 && p1->expo3 == p2->expo3) {
+      if (p1->expo1 == p2->expo1 && p1->expo2 == p2->expo2 &&
+          p1->expo3 == p2->expo3) {
         c = p1->coeff + p2->coeff;
         h3 = insertend(h3, c, p1->expo1, p1->expo2, p1->expo3);
         p1->flag = 1;
@@ -89,11 +94,11 @@ node *addpoly(node *h1, node *h2, node *h3) {
   return h3;
 }
 int main() {
-  node *h1 = (node *)malloc(sizeof(node));
+  node* h1 = (node*)malloc(sizeof(node));
   h1->next = h1;
-  node *h2 = (node *)malloc(sizeof(node));
+  node* h2 = (node*)malloc(sizeof(node));
   h2->next = h2;
-  node *h3 = (node *)malloc(sizeof(node));
+  node* h3 = (node*)malloc(sizeof(node));
   h3->next = h3;
   printf("read 1st polynomial\n");
   h1 = readpoly(h1);

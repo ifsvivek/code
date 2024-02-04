@@ -3,8 +3,12 @@
 #include <string.h>
 char STACK[20];
 int top = -1;
-void push(char sign) { STACK[++top] = sign; }
-char pop() { return (STACK[top--]); }
+void push(char sign) {
+  STACK[++top] = sign;
+}
+char pop() {
+  return (STACK[top--]);
+}
 int prec(char sym) {
   switch (sym) {
     case '^':
@@ -37,7 +41,8 @@ void convertin(char infix[], char postfix[]) {
         push(symbol);
         break;
       case ')':
-        while (STACK[top] != 'c') postfix[j++] = pop();
+        while (STACK[top] != 'c')
+          postfix[j++] = pop();
         pop();
         break;
       case '^':
@@ -54,7 +59,8 @@ void convertin(char infix[], char postfix[]) {
         break;
       default:
         postfix[j++] = symbol;
-        while (STACK[top] != '#') postfix[j++] = pop();
+        while (STACK[top] != '#')
+          postfix[j++] = pop();
         postfix[j++] = '\0';
     }
   }

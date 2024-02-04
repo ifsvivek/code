@@ -10,11 +10,11 @@ typedef struct DLL {
   struct DLL *prev, *next;
 } node;
 
-node *start = NULL;
+node* start = NULL;
 
-node *getNode() {
-  node *newnode;
-  newnode = (node *)malloc(sizeof(node));
+node* getNode() {
+  node* newnode;
+  newnode = (node*)malloc(sizeof(node));
   printf("Enter SSN, Name, Department, Designation, Salary, Phone number\n");
   scanf("%d%s%s%s%d%s", &newnode->ssn, newnode->name, newnode->dept,
         newnode->desg, &newnode->sal, newnode->phno);
@@ -23,7 +23,7 @@ node *getNode() {
   return newnode;
 }
 void insertbegin() {
-  node *newnode;
+  node* newnode;
   newnode = getNode();
   if (start == NULL)
     start = newnode;
@@ -40,12 +40,13 @@ void insertend() {
     start = newnode;
     return;
   }
-  while (temp->next != NULL) temp = temp->next;
+  while (temp->next != NULL)
+    temp = temp->next;
   temp->next = newnode;
   newnode->prev = temp;
 }
 void deletebegin() {
-  node *temp = start;
+  node* temp = start;
   if (start == NULL) {
     printf("List is empty\n");
     return;
@@ -57,7 +58,7 @@ void deletebegin() {
   free(temp);
 }
 void deleteend() {
-  node *temp = start;
+  node* temp = start;
   if (start == NULL) {
     printf("List is empty\n");
     return;
@@ -69,7 +70,8 @@ void deleteend() {
     start = NULL;
     free(temp);
   } else {
-    while (temp->next != NULL) temp = temp->next;
+    while (temp->next != NULL)
+      temp = temp->next;
     (temp->prev)->next = NULL;
     printf("Deleted node is\n%d\t%s\t%s\t%s\t%d\t%s\n", temp->ssn, temp->name,
            temp->dept, temp->desg, temp->sal, temp->phno);
@@ -78,7 +80,7 @@ void deleteend() {
 }
 
 void display() {
-  node *temp = start;
+  node* temp = start;
   int count = 0;
   if (start == NULL) {
     printf("List is empty\n");
@@ -99,13 +101,15 @@ int main() {
   int choice, n, i;
   while (1) {
     printf(
-        "Enter your choice \n1. InsertEnd\n2. InsertBegin\n3. DeleteBegin\n4. DeleteEnd\n5. Display\n6. Exit\n");
+        "Enter your choice \n1. InsertEnd\n2. InsertBegin\n3. DeleteBegin\n4. "
+        "DeleteEnd\n5. Display\n6. Exit\n");
     scanf("%d", &choice);
     switch (choice) {
       case 1:
         printf("Enter the no of employees\n");
         scanf("%d", &n);
-        for (i = 0; i < n; i++) insertend();
+        for (i = 0; i < n; i++)
+          insertend();
         break;
       case 2:
         insertbegin();

@@ -57,7 +57,7 @@ int main() {
   int choice, ele;
   printf("Enter the size of stack: ");
   scanf("%d", &max);
-  stack = (int *)malloc(max * sizeof(int));
+  stack = (int*)malloc(max * sizeof(int));
   while (1) {
     printf("\nEnter your choice\n");
     printf("1: Push\n2: Pop\n3: Display\n4: Palindrome\n5: Exit \n");
@@ -70,7 +70,8 @@ int main() {
         break;
       case 2:
         ele = pop();
-        if (ele != -1) printf("Deleted element is %d\n", ele);
+        if (ele != -1)
+          printf("Deleted element is %d\n", ele);
         break;
       case 3:
         display();

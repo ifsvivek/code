@@ -10,7 +10,9 @@ struct Calendar {
 
 typedef struct Calendar Cal;
 
-Cal* create() { return (Cal*)malloc(7 * sizeof(Cal)); }
+Cal* create() {
+  return (Cal*)malloc(7 * sizeof(Cal));
+}
 
 void read(Cal* days) {
   int dayIndex, flag;
