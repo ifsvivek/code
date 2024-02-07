@@ -44,11 +44,11 @@ void postorder(node* root) {
 
 void search(node* root, int key) {
   if (root == NULL) {
-    printf("key not found\n");
+    printf("Key not found\n");
     return;
   }
   if (root->data == key) {
-    printf("key found\n");
+    printf("Key found\n");
     return;
   }
   if (key < root->data)
@@ -59,40 +59,39 @@ void search(node* root, int key) {
 int main() {
   int n, i, key, choice;
   node *root = NULL, *temp;
-  printf("enter the number of nodes\n");
+  printf("Enter the number of nodes\n");
   scanf("%d", &n);
   for (i = 0; i < n; i++) {
-    printf("enter the element\n");
+    printf("Enter the element\n");
     scanf("%d", &key);
     root = insert(root, key);
   }
   while (1) {
     printf(
-        "enter 1 for inorder\n 2 for preorder\n 3 for postorder\n 4 for "
-        "search\n 5 for exit\n");
+        "Enter Choice\n1. Inorder\n2. Preorder\n3. Postorder\n4. Search\n5. Exit\n");
     scanf("%d", &choice);
     switch (choice) {
       case 1:
-        printf("\ninorder is \n");
+        printf("\nInorder is \n");
         inorder(root);
         break;
       case 2:
-        printf("\npre order is \n");
+        printf("\nPre order is \n");
         preorder(root);
         break;
       case 3:
-        printf("\npost order is \n");
+        printf("\nPost order is \n");
         postorder(root);
         break;
       case 4:
-        printf("\nenter the element to be searched");
+        printf("\nEnter the element to be searched: ");
         scanf("%d", &key);
         search(root, key);
         break;
       case 5:
         exit(0);
       default:
-        printf("invalid choice\n");
+        printf("Invalid choice\n");
     }
   }
 }
