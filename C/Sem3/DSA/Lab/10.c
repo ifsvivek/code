@@ -67,8 +67,7 @@ int main() {
     root = insert(root, key);
   }
   while (1) {
-    printf(
-        "Enter Choice\n1. Inorder\n2. Preorder\n3. Postorder\n4. Search\n5. Exit\n");
+    printf("Enter Choice\n1. Inorder\n2. Preorder\n3. Postorder\n4. Search\n5. Exit\n");
     scanf("%d", &choice);
     switch (choice) {
       case 1:
