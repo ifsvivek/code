@@ -9,3 +9,4 @@ txt/
 **/*.out
 C/train
 tailwind.config.js
+**/*v.bak

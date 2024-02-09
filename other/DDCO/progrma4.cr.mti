@@ -1,0 +1,64 @@
+C:/Users/vivek/Documents/DDCO/mjjjj.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/mjjjj.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} C:/Users/vivek/Documents/DDCO/demux2.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/demux2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module demux2
+
+Top level modules:
+	demux2
+
+} {} {}} C:/Users/vivek/Documents/DDCO/p3data.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/p3data.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module p3data
+
+Top level modules:
+	p3data
+
+} {} {}} C:/Users/vivek/Documents/DDCO/p3stuct.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/p3stuct.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module p3stuct
+
+Top level modules:
+	p3stuct
+
+} {} {}} C:/Users/vivek/Documents/DDCO/p3behave.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/p3behave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module p3behav
+
+Top level modules:
+	p3behav
+
+} {} {}} C:/Users/vivek/Documents/DDCO/mux8.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/mux8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux8
+
+Top level modules:
+	mux8
+
+} {} {}} C:/Users/vivek/Documents/DDCO/demux4.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/demux4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module demux4
+
+Top level modules:
+	demux4
+
+} {} {}} C:/Users/vivek/Documents/DDCO/demux8.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/demux8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module demux8
+
+Top level modules:
+	demux8
+
+} {} {}} C:/Users/vivek/Documents/DDCO/mux2.v {1 {vlog -work work -stats=none C:/Users/vivek/Documents/DDCO/mux2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}}

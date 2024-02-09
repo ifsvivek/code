@@ -1,0 +1,310 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modelsim/project
+vbitadder
+Z0 !s110 1706857086
+!i10b 1
+!s100 MOJm5da;7dj:6708WQCKL1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]ZbZnD]IJ<IID[BnYKBFF0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/vivek/Documents/DDCO
+w1706854140
+8C:/Users/vivek/Documents/DDCO/prgram1.v
+FC:/Users/vivek/Documents/DDCO/prgram1.v
+!i122 41
+Z4 L0 1 12
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1706857086.000000
+!s107 C:/Users/vivek/Documents/DDCO/prgram1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/prgram1.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vbitsub
+R0
+!i10b 1
+!s100 0H0JZNdZe:_dkgXaL>;MV3
+R1
+IJD`EmnSOAJhJ[?U=h?nkz0
+R2
+R3
+w1706854828
+8C:/Users/vivek/Documents/DDCO/fullsub.v
+FC:/Users/vivek/Documents/DDCO/fullsub.v
+!i122 43
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/vivek/Documents/DDCO/fullsub.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/fullsub.v|
+!i113 1
+R7
+R8
+vdemux2
+Z9 !s110 1707460179
+!i10b 1
+!s100 F0_6`9[aG2B]X8N<X2BzI1
+R1
+I]5CgM]Pl^>[j6@jzWAR=k2
+R2
+R3
+w1707460040
+8C:/Users/vivek/Documents/DDCO/demux2.v
+FC:/Users/vivek/Documents/DDCO/demux2.v
+!i122 102
+Z10 L0 1 6
+R5
+r1
+!s85 0
+31
+Z11 !s108 1707460179.000000
+!s107 C:/Users/vivek/Documents/DDCO/demux2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/demux2.v|
+!i113 1
+R7
+R8
+vdemux4
+R9
+!i10b 1
+!s100 lbz=c=na_7QDGBRTYdNjc1
+R1
+IK@<lm7RS<HIIU:]zke<Cf0
+R2
+R3
+w1707459464
+8C:/Users/vivek/Documents/DDCO/demux4.v
+FC:/Users/vivek/Documents/DDCO/demux4.v
+!i122 101
+Z12 L0 1 8
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/vivek/Documents/DDCO/demux4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/demux4.v|
+!i113 1
+R7
+R8
+vdemux8
+R9
+!i10b 1
+!s100 0^LdmfQ6>H151Fb2QM3HX0
+R1
+IPdN7DZhCfF4RVUU`VSlHb0
+R2
+R3
+w1707459163
+8C:/Users/vivek/Documents/DDCO/demux8.v
+FC:/Users/vivek/Documents/DDCO/demux8.v
+!i122 100
+L0 1 13
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/vivek/Documents/DDCO/demux8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/demux8.v|
+!i113 1
+R7
+R8
+vfa
+R0
+!i10b 1
+!s100 8DMN]iAmI]GdTa_3^9M4j2
+R1
+I@2N3ES?V98NkL<1RE5dQj1
+R2
+R3
+w1706853911
+8C:/Users/vivek/Documents/DDCO/fa.v
+FC:/Users/vivek/Documents/DDCO/fa.v
+!i122 42
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/vivek/Documents/DDCO/fa.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/fa.v|
+!i113 1
+R7
+R8
+vfs
+R0
+!i10b 1
+!s100 b=DF^R^K02=02b4V58OTf2
+R1
+IW1zEIHDG3W>ci;V<<_1302
+R2
+R3
+w1706854784
+8C:/Users/vivek/Documents/DDCO/fs.v
+FC:/Users/vivek/Documents/DDCO/fs.v
+!i122 44
+Z13 L0 2 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/vivek/Documents/DDCO/fs.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/fs.v|
+!i113 1
+R7
+R8
+vhs
+!s110 1706857087
+!i10b 1
+!s100 ocz7N>TM8WLd571:>65jl1
+R1
+Ia@k?8f9IllUoCYhS927Y62
+R2
+R3
+w1706857082
+8C:/Users/vivek/Documents/DDCO/hs.v
+FC:/Users/vivek/Documents/DDCO/hs.v
+!i122 45
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/vivek/Documents/DDCO/hs.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/hs.v|
+!i113 1
+R7
+R8
+vmux2
+!s110 1707461266
+!i10b 1
+!s100 R<`S@O4m2O5TD2EWBV03Z2
+R1
+Ibh@aTDf4IkSj?hgVMla[O0
+R2
+R3
+w1707461260
+8C:/Users/vivek/Documents/DDCO/mjjjj.v
+FC:/Users/vivek/Documents/DDCO/mjjjj.v
+!i122 104
+Z14 L0 1 5
+R5
+r1
+!s85 0
+31
+!s108 1707461266.000000
+!s107 C:/Users/vivek/Documents/DDCO/mjjjj.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/mjjjj.v|
+!i113 1
+R7
+R8
+vmux8
+R9
+!i10b 1
+!s100 9S16jY4g__1S8Siei0VV^0
+R1
+ICKKTOCT4STb5=EonZk>ZW1
+R2
+R3
+w1707458272
+8C:/Users/vivek/Documents/DDCO/mux8.v
+FC:/Users/vivek/Documents/DDCO/mux8.v
+!i122 99
+R14
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/vivek/Documents/DDCO/mux8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/mux8.v|
+!i113 1
+R7
+R8
+vp3behav
+Z15 !s110 1707460178
+!i10b 1
+!s100 ]R4ldC1NbX<b62XQN9JLC0
+R1
+I2VJNU5a5z8Rnii;E_dCN]1
+R2
+R3
+w1706858028
+8C:/Users/vivek/Documents/DDCO/p3behave.v
+FC:/Users/vivek/Documents/DDCO/p3behave.v
+!i122 98
+R12
+R5
+r1
+!s85 0
+31
+Z16 !s108 1707460178.000000
+!s107 C:/Users/vivek/Documents/DDCO/p3behave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/p3behave.v|
+!i113 1
+R7
+R8
+vp3data
+R15
+!i10b 1
+!s100 JY<lB[_A`RCGHdR>_kV`Z0
+R1
+IiFkYk@JUL8VDJON5_3kL:2
+R2
+R3
+w1706857725
+8C:/Users/vivek/Documents/DDCO/p3data.v
+FC:/Users/vivek/Documents/DDCO/p3data.v
+!i122 97
+R12
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/vivek/Documents/DDCO/p3data.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/p3data.v|
+!i113 1
+R7
+R8
+vp3stuct
+R15
+!i10b 1
+!s100 9E2iL2RE]VmhnI:E9J5K12
+R1
+IWba_^K[XFH3zNXb?_=i@J1
+R2
+R3
+w1706857529
+8C:/Users/vivek/Documents/DDCO/p3stuct.v
+FC:/Users/vivek/Documents/DDCO/p3stuct.v
+!i122 96
+R12
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/vivek/Documents/DDCO/p3stuct.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/Documents/DDCO/p3stuct.v|
+!i113 1
+R7
+R8
