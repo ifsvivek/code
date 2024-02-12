@@ -2,16 +2,32 @@
 
 import java.util.Scanner;
 
+class IException extends Exception {
+    IException(String msg) {
+        super(msg);
+    }
+}
+
 public class lab9 {
+    static void divide(int a, int b) throws IException {
+        if (b == 0) {
+            throw new IException("Division by zero is not allowed");
+        }
+        double c = (double) a / b;
+        System.out.println("Result= " + c);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter two numbers: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
         try {
-            int c = a / b;
-            System.out.println(c);
-        } catch (Exception e) {
-            System.out.println("Division by zero is not allowed");
+            divide(a, b);
+        } catch (IException e) {
+            System.out.println(e);
+        } finally {
+            System.out.println("End");
         }
     }
 }
