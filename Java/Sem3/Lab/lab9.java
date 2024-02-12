@@ -9,11 +9,11 @@ class IException extends Exception {
 }
 
 public class lab9 {
-    static void divide(int a, int b) throws IException {
+    static void divide(double a, double b) throws IException {
         if (b == 0) {
             throw new IException("Division by zero is not allowed");
         }
-        double c = (double) a / b;
+        double c = a / b;
         System.out.println("Result= " + c);
     }
 
