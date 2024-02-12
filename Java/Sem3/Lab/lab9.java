@@ -20,8 +20,8 @@ public class lab9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter two numbers: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
         try {
             divide(a, b);
         } catch (IException e) {
