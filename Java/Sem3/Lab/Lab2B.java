@@ -1,7 +1,7 @@
 // 2B
 import java.util.Scanner;
 
-class Calculator {
+class Lab2B {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int a, b;

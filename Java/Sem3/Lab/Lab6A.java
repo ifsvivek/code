@@ -1,4 +1,4 @@
-// 5
+// 6A
 abstract class Shape {
     abstract void draw();
 
@@ -35,7 +35,7 @@ class Square extends Shape {
     }
 }
 
-public class ShapeA {
+public class Lab6A {
     public static void main(String[] args) {
         Shape obj = new Circle();
         obj.draw();

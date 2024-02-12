@@ -18,7 +18,7 @@ class Outer {
     }
 }
 
-public class OuterInner {
+public class Lab8 {
     public static void main(String[] args) {
         Outer o = new Outer();
         Outer.Inner obj = o.new Inner();

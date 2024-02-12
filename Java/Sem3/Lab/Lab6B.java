@@ -44,7 +44,7 @@ class Triangle extends Shape {
 
 }
 
-public class ShapeB {
+public class Lab6B {
     public static void main(String[] args) {
         Shape obj = new Circle(10);
         obj.calArea();

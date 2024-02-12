@@ -1,7 +1,7 @@
 // 2A
 import java.util.Scanner;
 
-public class Bill {
+public class Lab2A {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the total cost: ");

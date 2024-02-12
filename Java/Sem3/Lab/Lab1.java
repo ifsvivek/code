@@ -1,7 +1,7 @@
 // 1
 import java.util.Scanner;
 
-public class AddMatrix {
+public class Lab1 {
 
     public static void main(String[] args) {
         int i, j;

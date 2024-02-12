@@ -64,7 +64,7 @@ class Contract extends Staff {
     }
 }
 
-public class Demo {
+public class Lab5 {
     public static void main(String[] args) {
         Teaching t = new Teaching();
         t.read();

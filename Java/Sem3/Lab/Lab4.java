@@ -41,7 +41,7 @@ class Mypoint {
     }
 }
 
-public class TestMyPoint {
+public class Lab4 {
     public static void main(String[] args) {
         Mypoint P1 = new Mypoint();
         Mypoint P2 = new Mypoint(10, 20);

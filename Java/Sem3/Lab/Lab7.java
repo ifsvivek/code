@@ -5,11 +5,11 @@ interface Resizable {
     void resizeHeight(int height);
 }
 
-public class Rectangle implements Resizable {
+public class Lab7 implements Resizable {
 
     int height, width;
 
-    Rectangle(int height, int width) {
+    Lab7(int height, int width) {
         this.height = height;
         this.width = width;
     }
@@ -23,7 +23,7 @@ public class Rectangle implements Resizable {
     }
 
     public static void main(String[] args) {
-        Rectangle R = new Rectangle(10, 20);
+        Lab7 R = new Lab7(10, 20);
         System.out.println("height= " + R.height + " width= " + R.width);
         R.resizeHeight(100);
         R.resizeWidth(200);
