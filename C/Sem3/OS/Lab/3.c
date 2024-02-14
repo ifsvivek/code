@@ -48,3 +48,34 @@ void consumer() {
   x--;
   mutex = signal(mutex);
 }
+
+
+
+/*
+output:
+1.PRODUCER
+2.CONSUMER
+3.EXIT
+
+ENTER YOUR CHOICE
+1
+
+producer produces the item1
+ENTER YOUR CHOICE
+1
+
+producer produces the item2
+ENTER YOUR CHOICE
+2
+
+ consumer consumes item2
+ENTER YOUR CHOICE
+2
+
+ consumer consumes item1
+ENTER YOUR CHOICE
+2
+BUFFER IS EMPTY
+ENTER YOUR CHOICE
+3
+*/

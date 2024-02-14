@@ -24,3 +24,13 @@ int main() {
     exit(0);
   }
 }
+
+
+/*
+output:
+total 228
+-rw-rw-rw- 1 codespace root         504 Feb 14 16:21 1.c
+-rw-rw-rw- 1 codespace root        1119 Feb 14 16:21 2A.c
+-rw-rw-rw- 1 codespace root        1180 Feb 14 16:21 2B.c
+Child Complete
+*/

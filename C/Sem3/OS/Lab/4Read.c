@@ -14,3 +14,8 @@ int main() {
   close(fd);
   return 0;
 }
+
+/*
+output:
+Writer: Hello
+*/

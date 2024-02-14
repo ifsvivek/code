@@ -44,3 +44,8 @@ int main() {
   printf("P%d", ans[n - 1]);
   return 0;
 }
+
+/*
+output:
+The safe sequence is:P0->P2->P3->P4->P1
+*/

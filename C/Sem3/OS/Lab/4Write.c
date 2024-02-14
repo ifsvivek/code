@@ -15,3 +15,8 @@ int main() {
   unlink(myfifo);
   return 0;
 }
+
+/*
+output:
+Run Reader Process to read the fifo file
+*/
