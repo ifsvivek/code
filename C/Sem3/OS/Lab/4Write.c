@@ -6,7 +6,7 @@
 int main() {
   int fd;
   char buf[1024];
-  char *myfifo = "/tmp/myfifo";
+  char* myfifo = "/tmp/myfifo";
   mkfifo(myfifo, 0666);
   printf("Run Reader Process to read the fifo file\n");
   fd = open(myfifo, O_WRONLY);

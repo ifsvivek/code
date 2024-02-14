@@ -58,13 +58,13 @@ Enter Burst Time for Process 2 : 4
 Enter Burst Time for Process 3 : 5
 Enter Burst Time for Process 4 : 6
 
-         PROCESS         BURST TIME      WAITING TIME    TURNAROUND TIME
+ PROCESS         BURST TIME      WAITING TIME    TURNAROUND TIME
 
-         P0              1               0               1
-         P1              2               1               3
-         P2              4               3               7
-         P3              5               7               12
-         P4              6               12              18
+P0              1               0               1
+P1              2               1               3
+P2              4               3               7
+P3              5               7               12
+P4              6               12              18
 Average Waiting Time -- 4.600000
 Average Turnaround Time -- 8.200000
 
