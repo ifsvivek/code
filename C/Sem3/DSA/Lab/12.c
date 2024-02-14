@@ -53,100 +53,16 @@ int main() {
 /*
 output:
 Enter the key
-2
-Collision
-It is Resolved by Linear Probing
-Hash Table contents
-Key	Value
-0	-1
-1	-1
-2	2
-3	-1
-4	-1
-
-Enter 1 to continue
-1
-Enter the key
-3
-Collision
-It is Resolved by Linear Probing
-Hash Table contents
-Key	Value
-0	-1
-1	-1
-2	2
-3	3
-4	-1
-
-Enter 1 to continue
-1
-Enter the key
-3
-Collision
-It is Resolved by Linear Probing
-Hash Table contents
-Key	Value
-0	-1
-1	-1
-2	2
-3	3
-4	-1
-
-Enter 1 to continue
-1
-Enter the key
-67
-Collision
-It is Resolved by Linear Probing
-Hash Table contents
-Key	Value
-0	-1
-1	-1
-2	2
-3	3
-4	-1
-
-Enter 1 to continue
-1
-Enter the key
-5
-Collision
-It is Resolved by Linear Probing
-Hash Table contents
-Key	Value
-0	-1
-1	-1
-2	2
-3	3
-4	5
-
-Enter 1 to continue
-1
-Enter the key
-10
-Collision
-It is Resolved by Linear Probing
-Hash Table contents
-Key	Value
-0	-1
-1	-1
-2	2
-3	3
-4	5
-
-Enter 1 to continue
-1
-Enter the key
 0
 Collision
 It is Resolved by Linear Probing
 Hash Table contents
-Key	Value
-0	0
-1	-1
-2	2
-3	3
-4	5
+Key     Value
+0       -1
+1       0
+2       -1
+3       -1
+4       -1
 
 Enter 1 to continue
 1
@@ -155,29 +71,81 @@ Enter the key
 Collision
 It is Resolved by Linear Probing
 Hash Table contents
-Key	Value
-0	0
-1	1
-2	2
-3	3
-4	5
+Key     Value
+0       -1
+1       0
+2       1
+3       -1
+4       -1
 
 Enter 1 to continue
 1
 Enter the key
 2
+Hash Table contents
+Key     Value
+0       -1
+1       0
+2       2
+3       -1
+4       -1
+
+Enter 1 to continue
+1
+Enter the key
+3
 Collision
 It is Resolved by Linear Probing
 Hash Table contents
+Key     Value
+0       -1
+1       0
+2       2
+3       -1
+4       3
+
+Enter 1 to continue
+1
+Enter the key
+4
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key     Value
+0       4
+1       0
+2       2
+3       -1
+4       3
+
+Enter 1 to continue
+1
+Enter the key
+3
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key     Value
+0       4
+1       0
+2       2
+3       3
+4       3
+
+Enter 1 to continue
+1
+Enter the key
+1
+Collision
 Hash Table is Full
-Key	Value
-0	0
-1	1
-2	2
-3	3
-4	5
+Hash Table contents
+Key     Value
+0       4
+1       0
+2       2
+3       3
+4       3
 
+Enter 1 to continue
 0
-
-
 */
