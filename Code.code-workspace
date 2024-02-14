@@ -7,6 +7,7 @@
 	"settings": {
 		"files.associations": {
 			"*.json": "json",
+			"*.css": "tailwindcss",
 			"array": "cpp",
 			"atomic": "cpp",
 			"bit": "cpp",
@@ -97,7 +98,6 @@
 			"valarray": "cpp",
 			"variant": "cpp",
 			"hms.cpp": "c",
-			"string.h": "c"
 		},
 		"cSpell.language": "en-GB"
 	}
