@@ -54,8 +54,6 @@ int main() {
 output:
 Enter the key
 0
-Collision
-It is Resolved by Linear Probing
 Hash Table contents
 Key     Value
 0       0
@@ -68,8 +66,6 @@ Enter 1 to continue
 1
 Enter the key
 1
-Collision
-It is Resolved by Linear Probing
 Hash Table contents
 Key     Value
 0       0
@@ -94,8 +90,6 @@ Enter 1 to continue
 1
 Enter the key
 3
-Collision
-It is Resolved by Linear Probing
 Hash Table contents
 Key     Value
 0       0
@@ -108,8 +102,6 @@ Enter 1 to continue
 1
 Enter the key
 4
-Collision
-It is Resolved by Linear Probing
 Hash Table contents
 Key     Value
 0       0
