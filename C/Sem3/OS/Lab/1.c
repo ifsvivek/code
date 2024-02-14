@@ -25,7 +25,6 @@ int main() {
   }
 }
 
-
 /*
 output:
 total 228
