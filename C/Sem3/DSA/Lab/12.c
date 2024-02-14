@@ -16,41 +16,39 @@ void display() {
 }
 
 void linear_probing(int key, int index) {
-    int i;
-    if(a[index] ==1) {
-        a[index] = key;
-        return;
+  int i;
+  if (a[index] == 1) {
+    a[index] = key;
+    return;
+  }
+  printf("Collision\n");
+  i = index;
+  do {
+    i = (i + 1) % m;
+    if (a[i] == -1) {
+      printf("It is Resolved by Linear Probing\n");
+      a[i] = key;
+      return;
     }
-    printf("Collision\n");
-    i=index;
-    do{
-        i=(i+1)%m;
-        if(a[i] == -1) {
-            printf("It is Resolved by Linear Probing\n");
-            a[i] = key;
-            return;
-        }
-    }while (i!=index);
-    printf("Hash Table is Full\n");
+  } while (i != index);
+  printf("Hash Table is Full\n");
 }
 
 int main() {
-    int i,key,index,input;
-    for(i=0;i<m;i++)
+  int i, key, index, input;
+  for (i = 0; i < m; i++)
     a[i] = -1;
-    do{
-        printf("Enter the key\n");
-        scanf("%d",&key);
-        index = key%m;
-        linear_probing(key,index);
-        display();
-        printf("Enter 1 to continue\n");
-        scanf("%d",&input);
-    }while(input==1);
-    return 0;
+  do {
+    printf("Enter the key\n");
+    scanf("%d", &key);
+    index = key % m;
+    linear_probing(key, index);
+    display();
+    printf("Enter 1 to continue\n");
+    scanf("%d", &input);
+  } while (input == 1);
+  return 0;
 }
-
-
 
 /*
 output:
@@ -81,6 +79,105 @@ Key	Value
 4	-1
 
 Enter 1 to continue
+1
+Enter the key
+3
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key	Value
+0	-1
+1	-1
+2	2
+3	3
+4	-1
+
+Enter 1 to continue
+1
+Enter the key
+67
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key	Value
+0	-1
+1	-1
+2	2
+3	3
+4	-1
+
+Enter 1 to continue
+1
+Enter the key
+5
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key	Value
+0	-1
+1	-1
+2	2
+3	3
+4	5
+
+Enter 1 to continue
+1
+Enter the key
+10
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key	Value
+0	-1
+1	-1
+2	2
+3	3
+4	5
+
+Enter 1 to continue
+1
+Enter the key
 0
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key	Value
+0	0
+1	-1
+2	2
+3	3
+4	5
+
+Enter 1 to continue
+1
+Enter the key
+1
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Key	Value
+0	0
+1	1
+2	2
+3	3
+4	5
+
+Enter 1 to continue
+1
+Enter the key
+2
+Collision
+It is Resolved by Linear Probing
+Hash Table contents
+Hash Table is Full
+Key	Value
+0	0
+1	1
+2	2
+3	3
+4	5
+
+0
+
 
 */
