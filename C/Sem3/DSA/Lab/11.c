@@ -51,16 +51,19 @@ void main() {
 /*
 output:
 Enter the no of nodes
-3
+5
 Enter the adjacency matrix
-1 1 0
-0 1 1
-0 0 1
+0 1 0 0 0
+1 0 1 1 0
+0 1 0 0 1
+0 1 0 0 1
+0 0 1 1 0
 Enter the source node
 1
 DFS
-1 2 3
+1 2 3 4 5
 BFS
-1->2->3->
+1->2->3->4->5->
+
 
 */
