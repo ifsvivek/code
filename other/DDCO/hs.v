@@ -1,4 +1,3 @@
-
 module hs(diff,borrow,a,b);
 	input a,b;
 	output diff,borrow;
