@@ -67,11 +67,11 @@ producer produces the item2
 ENTER YOUR CHOICE
 2
 
- consumer consumes item2
+consumer consumes item2
 ENTER YOUR CHOICE
 2
 
- consumer consumes item1
+consumer consumes item1
 ENTER YOUR CHOICE
 2
 BUFFER IS EMPTY

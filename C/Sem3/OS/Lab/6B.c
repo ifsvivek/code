@@ -38,3 +38,29 @@ void main() {
   for (i = 1; i <= nf; i++)
     printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, f[i], ff[i], b[ff[i]], frag[i]);
 }
+
+
+/*
+output:
+
+Memory Management Scheme - Worst Fit
+Enter the number of blocks:5
+Enter the number of files:3
+
+Enter the size of the blocks:-
+Block 1:20 
+Block 2:40
+Block 3:60
+Block 4:80
+Block 5:100
+Enter the size of the files :-
+File 1:10 
+File 2:30
+File 3:50
+
+File_no:        File_size :     Block_no:       Block_size:     Fragement
+1               10              5               100             90
+2               30              4               80              50
+3               50              3               60              10
+
+*/
