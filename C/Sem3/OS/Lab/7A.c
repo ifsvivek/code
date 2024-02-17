@@ -4,12 +4,12 @@ a) FIFO
 #include <stdio.h>
 int main() {
   int i, j, n, a[50], frame[10], no, k, avail, count = 0;
-  printf("\n ENTER THE NUMBER OF PAGES: ");
+  printf("\nENTER THE NUMBER OF PAGES: ");
   scanf("%d", &n);
-  printf("\n ENTER THE PAGE NUMBER : ");
+  printf("\nENTER THE PAGE NUMBER : ");
   for (i = 1; i <= n; i++)
     scanf("%d", &a[i]);
-  printf("\n ENTER THE NUMBER OF FRAMES: ");
+  printf("\nENTER THE NUMBER OF FRAMES: ");
   scanf("%d", &no);
   for (i = 0; i < no; i++)
     frame[i] = -1;
