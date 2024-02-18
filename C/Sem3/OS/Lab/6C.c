@@ -42,7 +42,7 @@ void main() {
 /*
 output:
 
-        Memory Management Scheme - Best Fit
+Memory Management Scheme - Best Fit
 Enter the number of blocks:5
 Enter the number of files:3
 
