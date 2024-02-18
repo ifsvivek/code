@@ -34,7 +34,7 @@ void main() {
     bf[ff[i]] = 1;
     highest = 0;
   }
-  printf("\nFile_no:\tFile_size :\tBlock_no:\tBlock_size:\tFragement");
+  printf("\nFile_no:\tFile_size :\tBlock_no:\tBlock_size:\tFragments");
   for (i = 1; i <= nf; i++)
     printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, f[i], ff[i], b[ff[i]], frag[i]);
 }
@@ -57,7 +57,7 @@ File 1:10
 File 2:30
 File 3:50
 
-File_no:        File_size :     Block_no:       Block_size:     Fragement
+File_no:        File_size :     Block_no:       Block_size:     Fragments
 1               10              5               100             90
 2               30              4               80              50
 3               50              3               60              10
