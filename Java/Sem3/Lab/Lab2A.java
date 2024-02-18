@@ -6,15 +6,14 @@ public class Lab2A {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the total cost: ");
         double bill = s.nextDouble();
-        if (bill < 2000) {
+        if (bill < 2000)
             bill -= 0.05 * bill;
-        } else if (bill <= 5000) {
+        else if (bill <= 5000)
             bill -= 0.25 * bill;
-        } else if (bill <= 1000) {
+        else if (bill <= 1000)
             bill -= 0.35 * bill;
-        } else {
+        else
             bill -= 0.5 * bill;
-        }
         System.out.println("Total Bill= " + bill);
     }
 }

@@ -1,3 +1,4 @@
+
 // 1
 import java.util.Scanner;
 
@@ -16,26 +17,22 @@ public class Lab1 {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the value of Matrix A");
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) {
+            for (j = 0; j < n; j++)
                 a[i][j] = s.nextInt();
-            }
         }
         System.out.println("Enter the value of Matrix B");
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) {
+            for (j = 0; j < n; j++)
                 b[i][j] = s.nextInt();
-            }
         }
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) {
+            for (j = 0; j < n; j++)
                 c[i][j] = a[i][j] + b[i][j];
-            }
         }
         System.out.println("Resultant Matrix");
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) {
+            for (j = 0; j < n; j++)
                 System.out.print(c[i][j] + " ");
-            }
             System.out.println();
         }
     }

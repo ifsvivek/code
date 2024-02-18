@@ -12,26 +12,17 @@ class Lab2B {
         System.out.println("Enter the Operator: ");
         char op = s.next().charAt(0);
         switch (op) {
-            case '+':
-                c = a + b;
-                break;
-            case '-':
-                c = a - b;
-                break;
-            case '*':
-                c = a * b;
-                break;
-            case '/':
-                if (a == 0 || b == 0) {
-                    System.out.println("ZeroDivisionError");
-                    break;
-                } else {
-                    c = (float) a / b;
-                    break;
-                }
-            default:
-                System.out.println("Invalid Input");
-                break;
+            case '+':c = a + b; break;
+            case '-':c = a - b; break;
+            case '*':c = a * b; break;
+            case '/': if (a == 0 || b == 0) {
+                        System.out.println("ZeroDivisionError");
+                        break;
+                    } else {
+                        c = (float) a / b;
+                        break;
+                    }
+            default: System.out.println("Invalid Input"); break;
         }
         System.out.println("Result of " + a + op + b + "=" + c);
     }

@@ -33,17 +33,14 @@ public class Lab3 {
             e[i].read();
         }
         System.out.println("ID\tName\tSalary\n");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
             e[i].display();
-        }
         System.out.println("Enter percentage");
         double per = s.nextDouble();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
             e[i].raise(per);
-        }
         System.out.println("ID\tName\tSalary");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
             e[i].display();
-        }
     }
 }
