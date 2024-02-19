@@ -8,7 +8,7 @@ class IException extends Exception {
     }
 }
 
-public class lab9 {
+public class Lab9 {
     static void divide(double a, double b) throws IException {
         if (b == 0) {
             throw new IException("Division by zero is not allowed");
