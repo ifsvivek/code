@@ -50,8 +50,8 @@ class Generate implements Runnable {
         while (i-- > 0) {
             n = r.nextInt(100);
             System.out.println("Generate: " + n);
-            Square s = new Square(n);
-            Cube c = new Cube(n);
+            new Square(n);
+            new Cube(n);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
