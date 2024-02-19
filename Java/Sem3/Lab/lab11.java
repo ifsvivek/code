@@ -1,21 +1,65 @@
-// Write a program to illustrate creation of threads using runnable class.
-// (start method start each of the newly created thread. Inside the run method
-// there is sleep() for suspend the thread for 500 milliseconds).
+// write a java program that implements a multi thread application that has 3 threads.
 
-public class lab11 {
-    public static void main(String[] args) {
-        Thread t = Thread.currentThread();
-        System.out.println("Current Thread: " + t);
-        t.setName("My Thread");
-        System.out.println("After changing " + t);
-        System.out.println("New Thread: " + t.getName());
-        for (int i = 5; i >= 0; i--) {
-            System.out.println(i);
+import java.util.Random;
+
+class Square implements Runnable {
+    Thread t;
+    int x;
+
+    Square(int n) {
+        x = n;
+        t = new Thread(this, "Square");
+        t.start();
+    }
+
+    public void run() {
+        System.out.println("Square: " + x * x);
+    }
+}
+
+class Cube implements Runnable {
+    Thread t;
+    int x;
+
+    Cube(int n) {
+        x = n;
+        t = new Thread(this, "Cube");
+        t.start();
+    }
+
+    public void run() {
+        System.out.println("Cube: " + x * x * x);
+    }
+}
+
+class Generate implements Runnable {
+    Thread t;
+
+    Generate() {
+        t = new Thread(this, "Generate");
+        t.start();
+    }
+
+    public void run() {
+        int n,i=3;
+
+        Random r = new Random();
+        while(i-->0) {
+            n = r.nextInt(100);
+            System.out.println("Generate: " + n);
+            Square s = new Square(n);
+            Cube c = new Cube(n);
             try {
-                Thread.sleep(500);
-            } catch (Exception e) {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
                 System.out.println("Interrupted");
             }
         }
+    }
+}
+
+public class lab11 {
+    public static void main(String[] args) {
+        Generate g = new Generate();
     }
 }
