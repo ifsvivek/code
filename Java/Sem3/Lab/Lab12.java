@@ -68,7 +68,7 @@ public class Lab12 {
 
     public static void main(String args[]) {
         Buffer b = new Buffer();
-        Producer p = new Producer(b);
-        Consumer c = new Consumer(b);
+        new Producer(b);
+        new Consumer(b);
     }
 }
