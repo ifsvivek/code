@@ -7,7 +7,7 @@ class Outer {
         private int y = 20;
 
         void display() {
-            System.out.println("X: "+x+" Y:"+y);
+            System.out.println("X: " + x + " Y:" + y);
         }
     }
 

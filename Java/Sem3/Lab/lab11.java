@@ -41,10 +41,10 @@ class Generate implements Runnable {
     }
 
     public void run() {
-        int n,i=3;
+        int n, i = 3;
 
         Random r = new Random();
-        while(i-->0) {
+        while (i-- > 0) {
             n = r.nextInt(100);
             System.out.println("Generate: " + n);
             Square s = new Square(n);
