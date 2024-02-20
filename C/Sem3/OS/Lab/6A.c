@@ -33,7 +33,6 @@ void main() {
   }
 }
 
-
 /*
 output:
 Enter no. of blocks: 5

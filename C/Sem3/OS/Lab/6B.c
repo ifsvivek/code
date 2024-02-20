@@ -39,7 +39,6 @@ void main() {
     printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", i, f[i], ff[i], b[ff[i]], frag[i]);
 }
 
-
 /*
 output:
 
@@ -48,13 +47,13 @@ Enter the number of blocks:5
 Enter the number of files:3
 
 Enter the size of the blocks:-
-Block 1:20 
+Block 1:20
 Block 2:40
 Block 3:60
 Block 4:80
 Block 5:100
 Enter the size of the files :-
-File 1:10 
+File 1:10
 File 2:30
 File 3:50
 
