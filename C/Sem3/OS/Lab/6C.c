@@ -3,7 +3,7 @@
 void main() {
   int frag[MAX], b[MAX], f[MAX], i, j, nb, nf, temp, highest = 0;
   static int bf[MAX], ff[MAX];
-  printf("\n\tMemory Management Scheme - Best Fit");
+  printf("\nMemory Management Scheme - Best Fit");
   printf("\nEnter the number of blocks:");
   scanf("%d", &nb);
   printf("Enter the number of files:");
