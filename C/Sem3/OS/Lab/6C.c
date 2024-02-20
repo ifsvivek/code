@@ -1,8 +1,8 @@
 #include <stdio.h>
-#define max 25
+#define MAX 25
 void main() {
-  int frag[max], b[max], f[max], i, j, nb, nf, temp, highest = 0;
-  static int bf[max], ff[max];
+  int frag[MAX], b[MAX], f[MAX], i, j, nb, nf, temp, highest = 0;
+  static int bf[MAX], ff[MAX];
   printf("\n\tMemory Management Scheme - Best Fit");
   printf("\nEnter the number of blocks:");
   scanf("%d", &nb);
@@ -20,8 +20,7 @@ void main() {
   }
   for (i = 1; i <= nf; i++) {
     for (j = 1; j <= nb; j++) {
-      if (bf[j] != 1)  // if bf[j] is not allocated
-      {
+      if (bf[j] != 1) {
         temp = b[j] - f[i];
         if (temp >= 0)
           if (highest < temp) {
