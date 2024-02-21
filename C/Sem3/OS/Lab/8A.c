@@ -68,3 +68,103 @@ void main() {
     }
   }
 }
+
+
+/*
+Output:
+Enter name of directory -- CSE
+
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 1
+
+Enter the name of the file -- A
+
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 1
+
+Enter the name of the file -- B
+
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 1
+
+Enter the name of the file -- C
+
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 4
+
+The Files are --        A       B       C
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 3
+
+Enter the name of the file -- ABC
+File ABC not found
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 2
+
+Enter the name of the file -- B
+File B is deleted
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 1
+
+Enter the name of the file -- C
+
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 4
+
+The Files are --        A       C       C
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 6
+INVALID INPUT
+
+1. Create File
+2. Delete File
+3. Search File
+4. Display Files
+5. Exit
+Enter your choice -- 5
+*/

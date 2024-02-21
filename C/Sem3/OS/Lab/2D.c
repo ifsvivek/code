@@ -1,5 +1,5 @@
-// Simulate the following CPU scheduling algorithms to find turnaround time and
-// waiting time d) Priority.
+// 2. Simulate the following CPU scheduling algorithms to find turnaround time and waiting time
+// d) Priority.
 
 #include <stdio.h>
 

@@ -1,5 +1,4 @@
-// Develop a c program to implement the Process system calls (fork (), exec(),
-// wait(), create process,terminate process)
+//1.  Develop a c program to implement the Process system calls (fork (), exec(), wait(), create process,terminate process)
 
 #include <stdio.h>
 #include <stdlib.h>

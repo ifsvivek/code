@@ -36,3 +36,20 @@ x:
   else
     exit(0);
 }
+
+/*
+Output:
+Enter how many blocks already allocated: 3
+Enter blocks already allocated: 1 3 5
+Enter index starting block and length: 2 2
+2-------->1
+3 Block is already allocated
+4-------->1
+Do you want to enter more file(Yes - 1/No - 0)1
+Enter index starting block and length: 1 4
+1 starting block is already allocated
+Do you want to enter more file(Yes - 1/No - 0)1
+Enter index starting block and length: 5 7
+5 starting block is already allocated
+Do you want to enter more file(Yes - 1/No - 0)0
+*/

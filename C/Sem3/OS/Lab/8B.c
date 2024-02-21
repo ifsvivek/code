@@ -96,3 +96,108 @@ void main() {
     }
   }
 }
+
+/*
+Output:
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 1
+
+Enter name of directory -- DIR1
+Directory created
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 1
+
+Enter name of directory -- DIR2
+Directory created
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 2
+
+Enter name of the directory -- DIR1
+Enter name of the file -- A1
+File created
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 2
+
+Enter name of the directory -- DIR1
+Enter name of the file -- A2
+File created
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 2
+
+Enter name of the directory -- DIR2
+Enter name of the file -- B1
+File created
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 5
+
+Directory       Files
+DIR1                    A1      A2
+DIR2                    B1
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 4
+
+Enter name of the directory -- DIR
+Directory DIR not found
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 3 
+
+Enter name of the directory -- DIR1
+Enter name of the file -- A2
+File A2 is deleted
+
+1. Create Directory
+2. Create File
+3. Delete File
+4. Search File
+5. Display
+6. Exit
+Enter your choice-- 6
+*/

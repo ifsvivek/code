@@ -62,3 +62,19 @@ int main() {
   SCAN(arr, head, dn);
   return 0;
 }
+
+/*
+Output:
+Num of seek process = 168
+Sequence is
+25
+14
+0
+50
+51
+78
+90
+100
+102
+126
+*/

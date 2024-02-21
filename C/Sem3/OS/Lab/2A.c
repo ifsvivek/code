@@ -1,5 +1,5 @@
-// Simulate the following CPU scheduling algorithms to find turnaround time and
-// waiting time a) FCFS
+// 2. Simulate the following CPU scheduling algorithms to find turnaround time and waiting time 
+// a) FCFS
 
 #include <stdio.h>
 void main() {
@@ -49,11 +49,11 @@ Enter 5 arrival time: 1 2 3 4 5
 Enter 5 burst time: 4 5 6 7 8
 
 P      AT      BT      CT      TAT     WT
-1        1       4       5       4       0
-2        2       5       10      8       3
-3        3       6       16      13      7
-4        4       7       23      19      12
-5        5       8       31      26      18
+1      1       4       5       4       0
+2      2       5       10      8       3
+3      3       6       16      13      7
+4      4       7       23      19      12
+5      5       8       31      26      18
 
 ATAT=14.000000
 AWT=8.000000

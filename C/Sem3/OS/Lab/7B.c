@@ -61,3 +61,25 @@ int main() {
   }
   printf("\nThe no of page faults is %d", c);
 }
+
+/*
+output:
+Enter no of pages: 20
+Enter the reference string: 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1
+Enter no of frames: 3
+
+        7
+        7       0
+        7       0       1
+        2       0       1
+        2       0       3
+        4       0       3
+        4       0       2
+        4       3       2
+        0       3       2
+        1       3       2
+        1       0       2
+        1       0       7
+
+The no of page faults is 12
+*/
