@@ -13,8 +13,7 @@ node* getnode() {
   node* newNode;
   newNode = (node*)malloc(sizeof(node));
   printf("Enter the student details USN, name, branch, sem, phone: ");
-  scanf("%s %s %s %d %s", newNode->usn, newNode->name, newNode->branch,
-        &newNode->sem, newNode->phone);
+  scanf("%s %s %s %d %s", newNode->usn, newNode->name, newNode->branch,&newNode->sem, newNode->phone);
   newNode->next = NULL;
   return newNode;
 }
@@ -92,13 +91,11 @@ void display() {
   }
 }
 
-int main() {
+void main() {
   int choice, n, i;
 
   while (1) {
-    printf(
-        "1.  InsertBegin\n2.  InsertEnd\n3.  DeleteBegin\n4.  DeleteEnd\n5. "
-        "Display\n6.  Exit\n");
+    printf("1.  InsertBegin\n2.  InsertEnd\n3.  DeleteBegin\n4.  DeleteEnd\n5. Display\n6.  Exit\n");
     scanf("%d", &choice);
     switch (choice) {
       case 1:
@@ -107,24 +104,12 @@ int main() {
         for (i = 0; i < n; i++)
           insertBegin();
         break;
-      case 2:
-        insertEnd();
-        break;
-      case 3:
-        deleteBegin();
-        break;
-      case 4:
-        deleteEnd();
-        break;
-      case 5:
-        display();
-        break;
-      case 6:
-        exit(0);
-      default:
-        printf("Invalid choice.\n");
+      case 2:insertEnd();break;
+      case 3:deleteBegin();break;
+      case 4:deleteEnd();break;
+      case 5:display();break;
+      case 6:exit(0);
+      default:printf("Invalid choice.\n");
     }
   }
-
-  return 0;
 }
