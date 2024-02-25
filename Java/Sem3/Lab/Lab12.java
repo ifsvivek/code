@@ -72,3 +72,13 @@ public class Lab12 {
         new Consumer(b);
     }
 }
+
+/*
+ * Output:
+ * Produced 0
+ * Consumed 0
+ * Produced 1
+ * Consumed 1
+ * Produced 2
+ * Consumed 2
+ */

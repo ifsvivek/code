@@ -1,5 +1,5 @@
 
-// 1
+// 1: Develop a Java program to add 2 matrices of order n [The order of the matrix is to be given as command line argument]. 
 import java.util.Scanner;
 
 public class Lab1 {
@@ -37,3 +37,18 @@ public class Lab1 {
         }
     }
 }
+
+/*
+ * Output:
+ * javac Lab1.java
+ * java Lab1 2
+ * Enter the value of Matrix A
+ * 1 2
+ * 3 4
+ * Enter the value of Matrix B
+ * 5 6
+ * 7 8
+ * Resultant Matrix
+ * 6 8
+ * 10 12
+ */

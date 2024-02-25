@@ -1,4 +1,6 @@
-// 5
+/*5. Design a super class called staff with details as staff id, name, phone number and salary. 
+Extend this class by writing 3 sub classes namely teaching (domain,publications), technical (skills) and contract (period).
+Write a JAVA program to read and display the staff objects of all 3 categories*/
 import java.util.Scanner;
 
 class Staff {
@@ -81,3 +83,27 @@ public class Lab5 {
     }
 
 }
+
+/*
+ * Output:
+ * 
+ * Enter SID,Name,Phone No.,Salary
+ * 1 A 123 1000
+ * Enter domain, publication
+ * CSE IEEE
+ * SID Name Phone No. Salary Domain Publication
+ * 1 A 123 1000 CSE IEEE
+ * Enter SID,Name,Phone No.,Salary
+ * 2 B 456 2000
+ * Enter skill
+ * Java
+ * SID Name Phone No. Salary Skill
+ * 2 B 456 2000 Java
+ * Enter SID,Name,Phone No.,Salary
+ * 3 C 789 3000
+ * Enter period
+ * 3
+ * SID Name Phone No. Salary Period
+ * 3 C 789 3000 3
+ * 
+ */

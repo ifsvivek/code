@@ -1,4 +1,5 @@
-// 8
+// 8: Develop a Java program to create a class Outer with a function display().
+// Create another class Inner with a function display() and call two functions in the main class.
 class Outer {
 
     private int x = 10;
@@ -27,3 +28,9 @@ public class Lab8 {
         obj.display();
     }
 }
+
+/*
+ * Output:
+ * X: 10 Y:20
+ * Y: 20
+ */

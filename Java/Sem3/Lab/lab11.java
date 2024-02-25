@@ -66,3 +66,16 @@ public class Lab11 {
         new Generate();
     }
 }
+
+/*
+ * Output:
+ * Generate: 39
+ * Square: 1521
+ * Cube: 59319
+ * Generate: 67
+ * Square: 4489
+ * Cube: 300763
+ * Generate: 90
+ * Square: 8100
+ * Cube: 729000
+ */

@@ -1,4 +1,4 @@
-// Develop a JAVA program to raise a custom exception (user defined exception) for DivisionByZero using try, catch, throw and finally
+// 9: Develop a JAVA program to raise a custom exception (user defined exception) for DivisionByZero using try, catch, throw and finally
 
 import java.util.Scanner;
 
@@ -31,3 +31,10 @@ public class Lab9 {
         }
     }
 }
+
+/*
+ * Output:
+ * Enter two numbers: 10 0
+ * IException: Division by zero is not allowed
+ * End
+ */

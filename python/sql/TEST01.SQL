@@ -1,0 +1,5 @@
+CREATE TABLE ID(ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(100));
+
+INSERT INTO ID(NAME) VALUES('A');
+
+ALTER USER 'your_username'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';

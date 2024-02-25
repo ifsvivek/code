@@ -1,4 +1,5 @@
-// 6
+// 6: Develop a Java program to create an abstract class shape with 2 abstract methods area() and perimeter(). Create 2 sub classes
+// Circle and Triangle that extends the shape and implements the respective methods to calculate the area and perimeter of the each shape.
 abstract class Shape {
     abstract void calArea();
 
@@ -55,3 +56,11 @@ public class Lab6B {
     }
 
 }
+
+/*
+ * Output:
+ * Area of Circle is 314.0000
+ * Perimeter of Circle is 62.8000
+ * Area of Triangle is 11.9765
+ * Perimeter of Triangle is 17.0000
+ */

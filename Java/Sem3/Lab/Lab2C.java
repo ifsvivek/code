@@ -1,4 +1,4 @@
-// 2C
+// 2C: Write a program to initialize 10 array elements and find the sum of first 4 elements using enhanced for loop.
 class Lab2C {
     public static void main(String[] args) {
         int sum = 0, count = 0;
@@ -12,3 +12,10 @@ class Lab2C {
         System.out.println("Sum= " + sum);
     }
 }
+
+/*
+ * Output:
+ * 
+ * Sum= 100
+ * 
+ */

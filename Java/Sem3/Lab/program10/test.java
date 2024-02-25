@@ -20,4 +20,3 @@ public class test {
         System.out.println("x= " + x + "\ty= " + y + "\tz= " + z+ "\tp= " + p);
     }
 }
-

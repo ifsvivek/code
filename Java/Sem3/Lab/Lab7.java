@@ -1,4 +1,5 @@
-// 7
+// 7: Develop a Java program to create an interface Resizable with two methods resizeWidth() and resizeHeight(). Create a class
+// Rectangle that implements Resizable interface and implements the resize methods.
 interface Resizable {
     void resizeWidth(int width);
 
@@ -31,3 +32,10 @@ public class Lab7 implements Resizable {
 
     }
 }
+
+/*
+ * Output:
+ * height= 10 width= 20
+ * Updated
+ * height= 100 width= 200
+ */

@@ -1,4 +1,6 @@
-// 3
+// 3: A class called Employee which models am employee with an id, name and salary is designed as shown in the class diagram.
+// the method raiseSalary(percentage) increases the salary by the given percentage.
+// Develop the employee class and suitable main method to demonstration.
 import java.util.Scanner;
 
 class Employee {
@@ -44,3 +46,23 @@ public class Lab3 {
             e[i].display();
     }
 }
+
+/*
+ * Output:
+
+ * Enter the number of employee
+ * 2
+ * Enter ID, Name, Salary
+ * 1 A 1000
+ * Enter ID, Name, Salary
+ * 2 B 2000
+ * ID Name Salary
+ * 1 A 1000.0
+ * 2 B 2000.0
+ * Enter percentage
+ * 10
+ * ID Name Salary
+ * 1 A 1100.0
+ * 2 B 2200.0
+
+ */

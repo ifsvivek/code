@@ -1,4 +1,6 @@
-// 6A
+// 6A: Develop a Java program to create an abstract class named Shape. create three sub classes named Circle, Triangle and Square each 
+// class has 2 member functions named draw() and erase(). Demonstrate the use of polymorphism concept by developing suitable
+// methods defining member data and main function.
 abstract class Shape {
     abstract void draw();
 
@@ -50,3 +52,14 @@ public class Lab6A {
     }
 
 }
+
+/*
+ * Output:
+ * Circle Created
+ * Circle Erased
+ * Triangle Created
+ * Triangle Erased
+ * Square Created
+ * Square Erased
+ 
+ */

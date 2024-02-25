@@ -10,11 +10,5 @@ public class demo {
 }
 
 /*
- * Output:
- * javac -d . test.java
- * javac -d . demo.java
- * java access.demo
- * Enter values of x, y, z and p
- * 1 2 3 4
- * x= 1	y= 2	z= 3	p= 4
+ * Output: 
  */
