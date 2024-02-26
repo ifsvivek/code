@@ -1,12 +1,9 @@
 // 8: Develop a Java program to create a class Outer with a function display().
 // Create another class Inner with a function display() and call two functions in the main class.
 class Outer {
-
     private int x = 10;
-
     class Inner {
         private int y = 20;
-
         void display() {
             System.out.println("X: " + x + " Y:" + y);
         }
