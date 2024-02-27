@@ -5,12 +5,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	dff
 
-} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/srff.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/srff.v}
+} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/1.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/1.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module srff
+-- Compiling module Lab1
 
 Top level modules:
-	srff
+	Lab1
 
 } {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/jkff.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/jkff.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -19,19 +19,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	jkff
 
-} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/1.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/1.v}
+} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/srff.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/srff.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Lab1
+-- Compiling module srff
 
 Top level modules:
-	Lab1
+	srff
 
-} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/fa.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/fa.v}
+} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/2D.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/2D.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module fa
+-- Compiling module FullSub
 
 Top level modules:
-	fa
+	FullSub
 
 } {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/fourbitadder.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/fourbitadder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -39,5 +39,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	bitadder
+
+} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/fa.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/fa.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fa
+
+Top level modules:
+	fa
 
 } {} {}}
