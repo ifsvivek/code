@@ -1,26 +1,26 @@
 // dfs and bfs
 
 #include <stdio.h>
-int a[10][10], n, visited[10],vi[10];
+int a[10][10], n, V1[10],V2[10];
 void dfs(int s) {
   int i;
-  visited[s] = 1;
+  V1[s] = 1;
   printf("%d ", s);
   for (i = 1; i <= n; i++) {
-    if (a[s][i] == 1 && visited[i] == 0)
+    if (a[s][i] == 1 && V1[i] == 0)
       dfs(i);
   }
 }
 
 void bfs(int s) {
   int i, f = 0, r = -1, q[n];
-  vi[s] = 1;
+  V2[s] = 1;
   while (1) {
     printf("%d->", s);
     for (i = 1; i <= n; i++) {
-      if (a[s][i] == 1 && vi[i] == 0) {
+      if (a[s][i] == 1 && V2[i] == 0) {
         q[++r] = i;
-        vi[i] = 1;
+        V2[i] = 1;
       }
     }
     if (f > r)
