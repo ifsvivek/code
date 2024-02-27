@@ -70,27 +70,17 @@ int main() {
     printf("\nEnter Choice\n1. Inorder\n2. Preorder\n3. Postorder\n4. Search\n5. Exit\n");
     scanf("%d", &choice);
     switch (choice) {
-      case 1:
-        printf("\nInorder is \n");
-        inorder(root);
-        break;
-      case 2:
-        printf("\nPre order is \n");
-        preorder(root);
-        break;
-      case 3:
-        printf("\nPost order is \n");
-        postorder(root);
-        break;
-      case 4:
-        printf("\nEnter the element to be searched: ");
-        scanf("%d", &key);
-        search(root, key);
-        break;
-      case 5:
-        exit(0);
-      default:
-        printf("Invalid choice\n");
+      case 1:printf("\nInorder is \n");
+             inorder(root);break;
+      case 2:printf("\nPre order is \n");
+             preorder(root);break;
+      case 3:printf("\nPost order is \n");
+             postorder(root);break;
+      case 4:printf("\nEnter the element to be searched: ");
+             scanf("%d", &key);
+             search(root, key);break;
+      case 5:exit(0);
+      default:printf("Invalid choice\n");
     }
   }
 }
