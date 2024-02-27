@@ -1,7 +1,7 @@
 // dfs and bfs
 
 #include <stdio.h>
-int a[10][10], n, visited[10];
+int a[10][10], n, visited[10],vi[10];
 void dfs(int s) {
   int i;
   visited[s] = 1;
@@ -14,13 +14,13 @@ void dfs(int s) {
 
 void bfs(int s) {
   int i, f = 0, r = -1, q[n];
-  visited[s] = 1;
+  vi[s] = 1;
   while (1) {
     printf("%d->", s);
     for (i = 1; i <= n; i++) {
-      if (a[s][i] == 1 && visited[i] == 0) {
+      if (a[s][i] == 1 && vi[i] == 0) {
         q[++r] = i;
-        visited[i] = 1;
+        vi[i] = 1;
       }
     }
     if (f > r)
