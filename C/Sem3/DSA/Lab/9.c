@@ -1,18 +1,22 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 struct polynomial {
   int coeff, expo1, expo2, expo3;
   struct polynomial* next;
   int flag;
 };
+
 typedef struct polynomial node;
+
 node* getnode() {
   node* newnode = (node*)malloc(sizeof(node));
   newnode->next = NULL;
   newnode->flag = 0;
   return newnode;
 }
+
 node* insertend(node* head, int c, int x, int y, int z) {
   node *newnode, *temp = head->next;
   newnode = getnode();
@@ -26,6 +30,7 @@ node* insertend(node* head, int c, int x, int y, int z) {
   newnode->next = head;
   return head;
 }
+
 node* readpoly(node* head) {
   int i, n, c, x, y, z;
   printf("enter the no of terms\n");
@@ -37,28 +42,28 @@ node* readpoly(node* head) {
   }
   return head;
 }
+
 void printpoly(node* head) {
   node* temp = head->next;
   while (temp->next != head) {
-    printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2,
-           temp->expo3);
+    printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2, temp->expo3);
     temp = temp->next;
   }
-  printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2,
-         temp->expo3);
+  printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2, temp->expo3);
 }
+
 void evaluate(node* head) {
   node* temp = head->next;
   int sum = 0, x, y, z;
   printf("enter the value of x y and z");
   scanf("%d%d%d", &x, &y, &z);
   while (temp != head) {
-    sum = sum + temp->coeff * pow(x, temp->expo1) * pow(y, temp->expo2) *
-                    pow(z, temp->expo3);
+    sum = sum + temp->coeff * pow(x, temp->expo1) * pow(y, temp->expo2) * pow(z, temp->expo3);
     temp = temp->next;
   }
-  printf("the evlauated result of a polynomial is %d\n", sum);
+  printf("the evaluated result of a polynomial is %d\n", sum);
 }
+
 node* addpoly(node* h1, node* h2, node* h3) {
   node *p1, *p2;
   int c;
@@ -66,8 +71,7 @@ node* addpoly(node* h1, node* h2, node* h3) {
   while (p1 != h1) {
     p2 = h2->next;
     while (p2 != h2) {
-      if (p1->expo1 == p2->expo1 && p1->expo2 == p2->expo2 &&
-          p1->expo3 == p2->expo3) {
+      if (p1->expo1 == p2->expo1 && p1->expo2 == p2->expo2 && p1->expo3 == p2->expo3) {
         c = p1->coeff + p2->coeff;
         h3 = insertend(h3, c, p1->expo1, p1->expo2, p1->expo3);
         p1->flag = 1;
@@ -93,6 +97,7 @@ node* addpoly(node* h1, node* h2, node* h3) {
 
   return h3;
 }
+
 int main() {
   node* h1 = (node*)malloc(sizeof(node));
   h1->next = h1;
