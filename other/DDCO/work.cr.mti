@@ -1,9 +1,23 @@
-{C:/Users/vivek/VS Code/code/other/DDCO/test.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/test.v}
+{C:/Users/vivek/VS Code/code/other/DDCO/dff.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/dff.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module demux2
+-- Compiling module dff
 
 Top level modules:
-	demux2
+	dff
+
+} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/srff.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/srff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module srff
+
+Top level modules:
+	srff
+
+} {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/jkff.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/jkff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module jkff
+
+Top level modules:
+	jkff
 
 } {} {}} {C:/Users/vivek/VS Code/code/other/DDCO/1.v} {1 {vlog -work work -stats=none {C:/Users/vivek/VS Code/code/other/DDCO/1.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

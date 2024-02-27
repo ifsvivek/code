@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/Modelsim/project
 vbitadder
-Z0 !s110 1708967168
+Z0 !s110 1709009783
 !i10b 1
 !s100 MOJm5da;7dj:6708WQCKL1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ Z3 dC:/Users/vivek/VS Code/code/other/DDCO
 w1708967119
 8C:/Users/vivek/VS Code/code/other/DDCO/fourbitadder.v
 FC:/Users/vivek/VS Code/code/other/DDCO/fourbitadder.v
-!i122 113
+!i122 119
 Z4 L0 1 12
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1708967168.000000
+Z6 !s108 1709009783.000000
 !s107 C:/Users/vivek/VS Code/code/other/DDCO/fourbitadder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/fourbitadder.v|
 !i113 1
@@ -125,30 +125,30 @@ R15
 R7
 R8
 vdff
-Z16 !s110 1708967167
+R0
 !i10b 1
-!s100 N`JgM7H6EOU:2oXWVVNM=2
+!s100 MIHnD50QnR3e_P@YPG6nk3
 R1
-IN?GU0@lOT:K98=nSG6[?72
+IPBfD]Tf@k9Q7R?Q7WEFEe2
 R2
 R3
-w1708062832
+w1709009650
 8C:/Users/vivek/VS Code/code/other/DDCO/dff.v
 FC:/Users/vivek/VS Code/code/other/DDCO/dff.v
-!i122 111
-Z17 L0 1 10
+!i122 117
+Z16 L0 1 11
 R5
 r1
 !s85 0
 31
-Z18 !s108 1708967167.000000
+R6
 !s107 C:/Users/vivek/VS Code/code/other/DDCO/dff.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/dff.v|
 !i113 1
 R7
 R8
 vfa
-R0
+Z17 !s110 1709009784
 !i10b 1
 !s100 8DMN]iAmI]GdTa_3^9M4j2
 R1
@@ -158,13 +158,13 @@ R3
 w1708967159
 8C:/Users/vivek/VS Code/code/other/DDCO/fa.v
 FC:/Users/vivek/VS Code/code/other/DDCO/fa.v
-!i122 114
+!i122 120
 R12
 R5
 r1
 !s85 0
 31
-R6
+Z18 !s108 1709009784.000000
 !s107 C:/Users/vivek/VS Code/code/other/DDCO/fa.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/fa.v|
 !i113 1
@@ -217,30 +217,30 @@ R11
 R7
 R8
 vjkff
-R16
+R0
 !i10b 1
-!s100 i7YULfCaT]A^geGAQcDc?2
+!s100 HCiiJQYC6B1iP:a^6Ha0d3
 R1
-IC<Ce^>4U5?k2[X9fE[N^m1
+I52>D>V9k];j:11LJ:h8VU1
 R2
 R3
-w1708244535
+w1709009595
 8C:/Users/vivek/VS Code/code/other/DDCO/jkff.v
 FC:/Users/vivek/VS Code/code/other/DDCO/jkff.v
-!i122 110
-R17
+!i122 116
+R16
 R5
 r1
 !s85 0
 31
-R18
+R6
 !s107 C:/Users/vivek/VS Code/code/other/DDCO/jkff.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/jkff.v|
 !i113 1
 R7
 R8
 vLab1
-!s110 1709006104
+R17
 !i10b 1
 !s100 8;:eN[n]H8_MCAJi5L]7O1
 R1
@@ -250,13 +250,13 @@ R3
 w1709006088
 8C:/Users/vivek/VS Code/code/other/DDCO/1.v
 FC:/Users/vivek/VS Code/code/other/DDCO/1.v
-!i122 115
+!i122 121
 Z20 L0 1 5
 R5
 r1
 !s85 0
 31
-!s108 1709006104.000000
+R18
 !s107 C:/Users/vivek/VS Code/code/other/DDCO/1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/1.v|
 !i113 1
@@ -379,23 +379,23 @@ R22
 R7
 R8
 vsrff
-R16
+R0
 !i10b 1
-!s100 ;SzIUnXX<QgW]R[4K2N1<3
+!s100 GJI0mSIW`SHW`^O<Y:<aE1
 R1
-IiV`^NgB2g2E`X:BkbV6[Y2
+I]TH1kG0A3I4gzTa:8aI;`1
 R2
 R3
-w1708063792
+w1709009654
 8C:/Users/vivek/VS Code/code/other/DDCO/srff.v
 FC:/Users/vivek/VS Code/code/other/DDCO/srff.v
-!i122 112
-R17
+!i122 118
+R16
 R5
 r1
 !s85 0
 31
-R18
+R6
 !s107 C:/Users/vivek/VS Code/code/other/DDCO/srff.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/srff.v|
 !i113 1
