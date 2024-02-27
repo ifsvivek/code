@@ -7,9 +7,8 @@ void dfs(int s) {
   visited[s] = 1;
   printf("%d ", s);
   for (i = 1; i <= n; i++) {
-    if (a[s][i] == 1 && visited[i] == 0) {
+    if (a[s][i] == 1 && visited[i] == 0)
       dfs(i);
-    }
   }
 }
 
@@ -36,9 +35,8 @@ void main() {
   scanf("%d", &n);
   printf("Enter the adjacency matrix\n");
   for (i = 1; i <= n; i++) {
-    for (j = 1; j <= n; j++) {
+    for (j = 1; j <= n; j++)
       scanf("%d", &a[i][j]);
-    }
   }
   printf("Enter the source node\n");
   scanf("%d", &s);
