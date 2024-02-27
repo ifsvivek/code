@@ -1,4 +1,4 @@
-module fs(diff,borrow,a,b,c);
+module FullSub(diff,borrow,a,b,c);
 	input a,b,c;
 	output diff,borrow;
 	assign diff=a^b^c;

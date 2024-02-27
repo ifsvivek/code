@@ -239,6 +239,30 @@ R18
 !i113 1
 R7
 R8
+vLab1
+!s110 1709006104
+!i10b 1
+!s100 8;:eN[n]H8_MCAJi5L]7O1
+R1
+I3;[4M^VIURj;=O9FX`Z>`0
+R2
+R3
+w1709006088
+8C:/Users/vivek/VS Code/code/other/DDCO/1.v
+FC:/Users/vivek/VS Code/code/other/DDCO/1.v
+!i122 115
+Z20 L0 1 5
+R5
+r1
+!s85 0
+31
+!s108 1709006104.000000
+!s107 C:/Users/vivek/VS Code/code/other/DDCO/1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/vivek/VS Code/code/other/DDCO/1.v|
+!i113 1
+R7
+R8
+n@lab1
 vmux2
 !s110 1707461266
 !i10b 1
@@ -251,7 +275,7 @@ w1707461260
 8C:/Users/vivek/Documents/DDCO/mjjjj.v
 FC:/Users/vivek/Documents/DDCO/mjjjj.v
 !i122 104
-Z20 L0 1 5
+R20
 R5
 r1
 !s85 0
