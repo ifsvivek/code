@@ -56,6 +56,39 @@ void search(node* root, int key) {
   else
     search(root->right, key);
 }
+node* delete(node* root,int key){
+    if(root==NULL){
+        printf("Key not found\n");
+        return NULL;
+    }
+    if(key<root->data)
+        root->left=delete(root->left,key);
+    else if(key>root->data)
+        root->right=delete(root->right,key);
+    else{
+        if(root->left==NULL && root->right==NULL){
+            free(root);
+            return NULL;
+        }
+        else if(root->left==NULL){
+            node* temp =root;
+            root=root->right;
+            free(temp);
+        }
+        else if(root->right==NULL){
+            node* temp =root;
+            root=root->left;
+            free(temp);
+        }
+        else{
+            node* temp = root->right;
+            while(temp->left!=NULL)
+                temp=temp->left;
+            root->data=temp->data;
+            root->right=delete(root->right,temp->data);
+        }
+    }
+}
 int main() {
   int n, i, key, choice;
   node *root = NULL, *temp;
@@ -67,7 +100,7 @@ int main() {
     root = insert(root, key);
   }
   while (1) {
-    printf("\nEnter Choice\n1. Inorder\n2. Preorder\n3. Postorder\n4. Search\n5. Exit\n");
+    printf("\nEnter Choice\n1. Inorder\n2. Preorder\n3. Postorder\n4. Search\n5. Delete\n6.Exit\n");
     scanf("%d", &choice);
     switch (choice) {
       case 1:printf("\nInorder is \n");
@@ -79,7 +112,13 @@ int main() {
       case 4:printf("\nEnter the element to be searched: ");
              scanf("%d", &key);
              search(root, key);break;
-      case 5:exit(0);
+      case 5:
+           printf("\nEnter the element to be deleted: ");
+            scanf("%d", &key);
+            root=delete(root,key);
+            break;
+      case 6:
+          exit(0);
       default:printf("Invalid choice\n");
     }
   }
