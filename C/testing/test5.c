@@ -24,7 +24,7 @@ bool isFull(char board[SIZE][SIZE]) {
         }
     }
     return true;
-}   
+}
 
 bool checkWin(char board[SIZE][SIZE], char player) {
     for (int i = 0; i < SIZE; i++) {
