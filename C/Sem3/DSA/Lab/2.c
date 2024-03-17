@@ -31,13 +31,13 @@ void findreplace(char* text, char* pat, char* rep) {
 int main() {
 	char text[100], pat[20], rep[20];
 
-	printf("Enter the text\n");
+	printf("Enter the text: ");
 	gets(text);
 
-	printf("Enter the pattern");
+	printf("Enter the pattern: ");
 	gets(pat);
 
-	printf("Enter the replace string");
+	printf("Enter the replace string: ");
 	gets(rep);
 
 	findreplace(text, pat, rep);
