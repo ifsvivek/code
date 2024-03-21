@@ -1,16 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-char STACK[20];
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+char stack[50];
 int top = -1;
-void push(char sign) {
-    STACK[++top] = sign;
+void push(char sym) {
+    stack[++top] = sym;
 }
 char pop() {
-    return (STACK[top--]);
+    return stack[top--];
 }
-int prec(char sym) {
-    switch (sym) {
+int preec(char symb) {
+    switch (symb) {
     case '^':
     case '$':
         return 4;
@@ -25,24 +25,20 @@ int prec(char sym) {
     case ')':
     case '#':
         return 1;
-    default:
-        return 0;
+    default: return 0;
     }
 }
-void convertin(char infix[], char postfix[]) {
+void convertip(char infix[], char postfix[]) {
     char symbol;
-    int i = 0;
-    int j = 0;
+    int i = 0, j = 0;
     push('#');
-    for (i = 0; i < strlen(infix); i++) {
+    for (i = 0;i < strlen(infix);i++) {
         symbol = infix[i];
         switch (symbol) {
-        case '(':
-            push(symbol);
+        case '(':push(symbol);
             break;
-        case ')':
-            while (STACK[top] != 'c')
-                postfix[j++] = pop();
+        case ')':while (stack[top] != '(')
+            postfix[j++] = pop();
             pop();
             break;
         case '^':
@@ -52,23 +48,22 @@ void convertin(char infix[], char postfix[]) {
         case '*':
         case '+':
         case '-':
-            while (prec(symbol) <= prec(STACK[top])) {
+            while (preec(symbol) <= preec(stack[top])) {
                 postfix[j++] = pop();
-                push(symbol);
             }
+            push(symbol);
             break;
-        default:
-            postfix[j++] = symbol;
-            while (STACK[top] != '#')
-                postfix[j++] = pop();
-            postfix[j++] = '\0';
+        default: postfix[j++] = symbol;
         }
     }
+    while (stack[top] != '#')
+        postfix[j++] = pop();
+    postfix[j] = '\0';
 }
 void main() {
-    char infix[30], postfix[30];
-    printf("Enter INFIX: ");
-    gets(infix);
-    convertin(infix, postfix);
-    printf("POSTFIX: %s\n", postfix);
+    char infix[50], postfix[50];
+    printf("Enter infix value : ");
+    scanf("%s", infix);
+    convertip(infix, postfix);
+    printf("Result : %s ", postfix);
 }
