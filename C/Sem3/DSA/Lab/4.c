@@ -3,12 +3,15 @@
 #include<string.h>
 char stack[50];
 int top = -1;
+
 void push(char sym) {
     stack[++top] = sym;
 }
+
 char pop() {
     return stack[top--];
 }
+
 int preec(char symb) {
     switch (symb) {
     case '^':
@@ -28,6 +31,7 @@ int preec(char symb) {
     default: return 0;
     }
 }
+
 void convertip(char infix[], char postfix[]) {
     char symbol;
     int i = 0, j = 0;
@@ -60,6 +64,7 @@ void convertip(char infix[], char postfix[]) {
         postfix[j++] = pop();
     postfix[j] = '\0';
 }
+
 void main() {
     char infix[50], postfix[50];
     printf("Enter infix value : ");

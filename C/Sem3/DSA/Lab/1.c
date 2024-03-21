@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct Calendar {
+typedef struct Calendar {
     char* name;
     char* description;
     int day;
-};
-
-typedef struct Calendar Cal;
+}Cal;
 
 Cal* create() {
     return (Cal*)malloc(7 * sizeof(Cal));

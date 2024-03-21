@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 typedef struct DLL {
     int ssn;
     char name[20];
@@ -21,6 +22,7 @@ node* getNode() {
     newnode->next = NULL;
     return newnode;
 }
+
 void insertbegin() {
     node* newnode;
     newnode = getNode();
@@ -32,6 +34,7 @@ void insertbegin() {
         start = newnode;
     }
 }
+
 void insertend() {
     node* newnode, * temp = start;
     newnode = getNode();
@@ -44,6 +47,7 @@ void insertend() {
     temp->next = newnode;
     newnode->prev = temp;
 }
+
 void deletebegin() {
     node* temp = start;
     if (start == NULL) {
@@ -55,6 +59,7 @@ void deletebegin() {
     start = temp->next;
     free(temp);
 }
+
 void deleteend() {
     node* temp = start;
     if (start == NULL) {
@@ -95,8 +100,7 @@ void display() {
 int main() {
     int choice, n, i;
     while (1) {
-        printf(
-            "Enter your choice \n1. InsertEnd\n2. InsertBegin\n3. DeleteBegin\n4. DeleteEnd\n5. Display\n6. Exit\n");
+        printf("Enter your choice \n1. InsertEnd\n2. InsertBegin\n3. DeleteBegin\n4. DeleteEnd\n5. Display\n6. Exit\n");
         scanf("%d", &choice);
         switch (choice) {
         case 1:

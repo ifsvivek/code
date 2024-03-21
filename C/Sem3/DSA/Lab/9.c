@@ -1,18 +1,20 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-struct polynomial {
+
+typedef struct polynomial {
     int coeff, expo1, expo2, expo3;
     struct polynomial* next;
     int flag;
-};
-typedef struct polynomial node;
+}node;
+
 node* getnode() {
     node* newnode = (node*)malloc(sizeof(node));
     newnode->next = NULL;
     newnode->flag = 0;
     return newnode;
 }
+
 node* insertend(node* head, int c, int x, int y, int z) {
     node* newnode, * temp = head->next;
     newnode = getnode();
@@ -26,6 +28,7 @@ node* insertend(node* head, int c, int x, int y, int z) {
     newnode->next = head;
     return head;
 }
+
 node* readpoly(node* head) {
     int i, n, c, x, y, z;
     printf("enter the no of terms\n");
@@ -37,15 +40,17 @@ node* readpoly(node* head) {
     }
     return head;
 }
+
 void printpoly(node* head) {
     node* temp = head->next;
     while (temp->next != head) {
-        printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2,temp->expo3);
+        printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2, temp->expo3);
         temp = temp->next;
     }
     printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2,
         temp->expo3);
 }
+
 void evaluate(node* head) {
     node* temp = head->next;
     int sum = 0, x, y, z;
@@ -57,6 +62,7 @@ void evaluate(node* head) {
     }
     printf("the evlauated result of a polynomial is %d\n", sum);
 }
+
 node* addpoly(node* h1, node* h2, node* h3) {
     node* p1, * p2;
     int c;
@@ -90,6 +96,7 @@ node* addpoly(node* h1, node* h2, node* h3) {
 
     return h3;
 }
+
 int main() {
     node* h1 = (node*)malloc(sizeof(node));
     h1->next = h1;
