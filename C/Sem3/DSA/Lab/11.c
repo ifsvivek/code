@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 int a[10][10], n, V1[10], V2[10];
+
 void dfs(int s) {
     int i;
     V1[s] = 1;
