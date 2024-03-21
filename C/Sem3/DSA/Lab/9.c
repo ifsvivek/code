@@ -59,7 +59,7 @@ void evaluate(node* head) {
         sum = sum + temp->coeff * pow(x, temp->expo1) * pow(y, temp->expo2) * pow(z, temp->expo3);
         temp = temp->next;
     }
-    printf("the evlauated result of a polynomial is %d\n", sum);
+    printf("the evaluated result of a polynomial is %d\n", sum);
 }
 
 node* addpoly(node* h1, node* h2, node* h3) {
