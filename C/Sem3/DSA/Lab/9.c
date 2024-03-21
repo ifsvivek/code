@@ -47,8 +47,7 @@ void printpoly(node* head) {
         printf("%dx^%dy^%dz^%d + ", temp->coeff, temp->expo1, temp->expo2, temp->expo3);
         temp = temp->next;
     }
-    printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2,
-        temp->expo3);
+    printf("%dx^%dy^%dz^%d\n", temp->coeff, temp->expo1, temp->expo2,temp->expo3);
 }
 
 void evaluate(node* head) {
