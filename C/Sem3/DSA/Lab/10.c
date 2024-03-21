@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct BST {
+typedef struct BST {
     int data;
     struct BST* left;
     struct BST* right;
-};
-typedef struct BST node;
+}node;
+
 node* insert(node* root, int key) {
     if (root == NULL) {
         root = (node*)malloc(sizeof(node));
@@ -20,6 +20,7 @@ node* insert(node* root, int key) {
         root->right = insert(root->right, key);
     return root;
 }
+
 void inorder(node* root) {
     if (root != NULL) {
         inorder(root->left);
@@ -27,6 +28,7 @@ void inorder(node* root) {
         inorder(root->right);
     }
 }
+
 void preorder(node* root) {
     if (root != NULL) {
         printf("%d\t", root->data);
@@ -34,6 +36,7 @@ void preorder(node* root) {
         preorder(root->right);
     }
 }
+
 void postorder(node* root) {
     if (root != NULL) {
         postorder(root->left);
@@ -56,6 +59,7 @@ void search(node* root, int key) {
     else
         search(root->right, key);
 }
+
 int main() {
     int n, i, key, choice;
     node* root = NULL, * temp;
