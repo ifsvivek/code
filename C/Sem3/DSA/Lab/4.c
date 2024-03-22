@@ -40,11 +40,11 @@ void convertip(char infix[], char postfix[]) {
         symbol = infix[i];
         switch (symbol) {
         case '(':push(symbol);
-            break;
+                    break;
         case ')':while (stack[top] != '(')
-            postfix[j++] = pop();
-            pop();
-            break;
+                    postfix[j++] = pop();
+                    pop();
+                    break;
         case '^':
         case '$':
         case '%':
