@@ -62,7 +62,7 @@ void search(node* root, int key) {
 
 int main() {
     int n, i, key, choice;
-    node* root = NULL, * temp;
+    node* root = NULL;
     printf("Enter the number of nodes\n");
     scanf("%d", &n);
     for (i = 0; i < n; i++) {
