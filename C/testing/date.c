@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define NUM_THREADS 12
+#define NUM_THREADS 128
 
 char* randstring(size_t len) {
     static char charset[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -49,12 +49,8 @@ void* thread_function(void* thread_arg) {
         HE[8] = 'L';
         HE[9] = 'D';
         HE[10] = '\0';
-
-        if (strcmp(HE, HEE) == 0) {
-            printf("Thread %d: Success at %dth attempt\n", *thread_id, c);
-            printf("%s\n", HE);
-            printf("%s\n", HEE);
-            pthread_exit(NULL);
+        if (HEE[0] == 'H' && HEE[1] == 'E' && HEE[2] == 'L' && HEE[3] == 'L' && HEE[4] == 'O' && HEE[5] == 'W' && HEE[6] == 'O' && HEE[7] == 'R' && HEE[8] == 'L' && HEE[9] == 'D') {
+            printf("%c\n", HEE[0]);
         }
         c++;
     }
