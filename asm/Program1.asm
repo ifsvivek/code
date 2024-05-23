@@ -1,0 +1,7 @@
+    AREA SQUARE, CODE, READONLY
+    ENTRY
+START
+    MOV R0, #10
+    MUL R1, R0, R0
+XS b XS
+    END

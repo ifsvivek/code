@@ -1,0 +1,8 @@
+    AREA MULTIPLICATION, CODE, READONLY
+    ENTRY
+    MOV R0,#0x4
+    MOV R1,#0x5
+    MUL R2,R0,R1
+
+XS b XS
+    END
