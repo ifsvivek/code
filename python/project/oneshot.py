@@ -1176,7 +1176,7 @@ if __name__ == '__main__':
 
     if sys.hexversion < 0x03060F0:
         die("The program requires Python 3.6 and above")
-    if os.getpid() != 0:
+    if os.getuid() != 0:
         die("Run it as root")
 
     if not ifaceUp(args.interface):
