@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 i = 0
-# Define the area to check on the screen (top-left corner and width/height)   
+# Define the area to check on the screen (top-left corner and width/height)
 # Top-left corner coordinates
 width, height = 80, 80  # Rectangle width and height
 
@@ -34,19 +34,19 @@ while True:
     # If there's a red object in the area, press the space bar
     if red_pixels > 0:
         i += 3
-        # if i > 100:
-        #     i += 2
-        # elif i > 160:
-        #     i += 3
-        # elif i > 200:
-        #     i += 4             
+        if i > 100:
+            i += 3
+        elif i > 150:
+            i += 4
+        elif i > 200:
+            i += 5
         pyautogui.press("space")
     print(i)
     # Exit the loop on 'q' key press
     if cv2.waitKey(1) == ord("q"):
         cv2.destroyAllWindows()
         break
-   
+
     # Decrease the delay as the game progresses
     elapsed_time = time.time() - start_time
     delay = max(0.01, 0.1 - elapsed_time / 100.0)
