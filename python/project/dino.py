@@ -13,7 +13,7 @@ lower_red = np.array([160, 50, 50], dtype=np.uint8)
 upper_red = np.array([180, 255, 255], dtype=np.uint8)
 
 # Initial delay between each screenshot (in seconds)
-delay = 0.1
+delay = 0.0001
 
 # Capture the screen continuously
 start_time = time.time()
@@ -40,7 +40,9 @@ while True:
             i += 4
         elif i > 200:
             i += 5
-        pyautogui.press("space")
+        elif i > 250:
+            i += 7
+        pyautogui.press("up")
     print(i)
     # Exit the loop on 'q' key press
     if cv2.waitKey(1) == ord("q"):
@@ -48,8 +50,8 @@ while True:
         break
 
     # Decrease the delay as the game progresses
-    elapsed_time = time.time() - start_time
-    delay = max(0.01, 0.1 - elapsed_time / 100.0)
+    # elapsed_time = time.time() - start_time               
+    # delay = max(0.001, 0.01 - elapsed_time / 100.0)
 
-    # Wait for the delay before taking the next screenshot
-    time.sleep(delay)
+    # # Wait for the delay before taking the next screenshot
+    # time.sleep(delay)
