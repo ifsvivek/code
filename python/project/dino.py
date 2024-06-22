@@ -50,8 +50,8 @@ while True:
         break
 
     # Decrease the delay as the game progresses
-    # elapsed_time = time.time() - start_time               
-    # delay = max(0.001, 0.01 - elapsed_time / 100.0)
+    elapsed_time = time.time() - start_time               
+    delay = max(0.001, 0.01 - elapsed_time / 100.0)
 
-    # # Wait for the delay before taking the next screenshot
-    # time.sleep(delay)
+    # Wait for the delay before taking the next screenshot
+    time.sleep(delay)
