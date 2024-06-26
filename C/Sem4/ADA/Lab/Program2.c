@@ -27,19 +27,15 @@ void prims(int n, int s, int cost[][10]) {
 }
 
 void main() {
-    int n, s;
+    int n, s, cost[10][10];
     printf("Enter the no.of vertices: ");
     scanf("%d", &n);
-
-    int a[n][n];
-
     printf("Enter the cost matrix: \n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++)
-            scanf("%d", &a[i][j]);
+            scanf("%d", &cost[i][j]);
     }
     printf("Enter the source vertex: ");
     scanf("%d", &s);
-
-    prims(n, s, a);
+    prims(n, s, cost);
 }
