@@ -480,9 +480,6 @@ a[href="https://support.discord.com"] /* hide help */
 .userProfileModalInner_c69a7b:before /* user profile modal bottom */ {
     border-radius: calc(var(--roundness-l) - 4px);
 }
-.overlayBackground_c69a7b /* user profile inner */ {
-    border-radius: var(--roundness-s);
-}
 .menu_d90b3d /* general popouts */,
 .embed_b0068a/* embeds */,
 .mediaAttachmentsContainer__242e2 /* image container */,
@@ -493,7 +490,8 @@ a[href="https://support.discord.com"] /* hide help */
 .peopleListItem_d51464:hover /* online list friends */,
 .withTagAsButton_b2ca13:hover, .withTagless_b2ca13:hover /* user panel username */,
 .messageGroupWrapper_ac90a2 /* pinned messages */,
-.accountProfileCard_b69b77 /* my account settings profile background */ {
+.accountProfileCard_b69b77 /* my account settings profile background */,
+.userProfileInner_c69a7b /* user profile inner */ {
     border-radius: var(--roundness-m);
 }
 .scrollableContainer_d0696b /* message bar */,
@@ -551,6 +549,12 @@ button.button_dd4f85 /* small buttons */,
 }
 #app-mount .centerButton_ef18ee /* fix vc buttons */ {
     border-radius: 50%;
+}
+
+/* fix view server as role popup */
+.viewAsRolesWarning_adcaac {
+    position: fixed;
+    left: 102px;
 }
 
 /* separate guilds panel background */
@@ -1121,7 +1125,7 @@ html.theme-light,
     --text-low-contrast: var(--primary-360);
     --text-message-preview-low-sat: var(--primary-360);
     --text-muted: var(--text-5);
-    --text-muted-on-default: red;
+    --text-muted-on-default: var(--text-4);
     --text-normal: var(--text-3);
     --text-positive: var(--green-330);
     --text-primary: var(--text-3);
@@ -1138,6 +1142,7 @@ html.theme-light,
     --profile-gradient-secondary-color: var(--bg-4);
 
     --elevation-low: none;
+    --shadow-ledge: none;
     --search-popout-option-fade: none;
     --search-popout-option-fade-hover: none;
 
