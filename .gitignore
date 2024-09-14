@@ -10,4 +10,4 @@ txt/
 C/train
 tailwind.config.js
 **/*v.bak
-env/
+.venv/
